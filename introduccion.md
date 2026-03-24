@@ -14,9 +14,9 @@
 
 - El sistema debe permitir cancelar turnos.
 
- -El sistema del paciente debe tener los botones de "Reservar" y "Cancelar" y en cada paso le debe llegar notificación al mail y whatsapp.
+ -El sistema del paciente debe tener los botones de "Visualizar turnos disponibles", "Agendar" y "Cancelar" y en cada paso le debe llegar notificación al mail y whatsapp.
 
--La secretaria debe tener las opciones de "Reservar" y "Reprogramar" para avisar en el sistema que ya el paciente se ha anunciado al turno, y esta debe aparecer en el sistema del doctor.
+-La secretaria debe tener las opciones de "Agendar", "Reprogramar", "Cancelar" y "Notificar al paciente" para avisar en el sistema que ya el paciente se ha anunciado al turno, y esta debe aparecer en el sistema del doctor.
 
 ### Tipos de turnos
 
@@ -82,15 +82,16 @@ No se deben programar:
 
   - Registrar la llegada del paciente
 
-   - Registrar la hora real de llegada (esto lo marca la secretaria una vez llegado el paciente y haberse anunciadp)
+   - Registrar la hora real de llegada (esto lo marca la secretaria una vez llegado el paciente y haberse anunciado)
 
  #Requisitos no funcionales
+
   ## RNF1 -  Usabilidad
    - El sistema debe ser fácil de entender y ser práctico para la vista tanto del paciente como de la secretaria y el médico 
    - Debe ser una interfaz distinta tanto como para el paciente como para el médico y la secretaria
 
 
    ## RNF2 - Información y seguridad
-   - El sistema debe contener datos de los pacientes, asi como su nombre, edad, número de teléfono y mail, para poder enviar las notificaciones
+   - El sistema debe contener datos de los pacientes, asi como su nombre, fecha de nacimiento, dni,  número de teléfono y mail, para poder enviar las notificaciones
    - El sistema debe detectar cuando es un usuario nuevo para que se reserve como "Primera consulta"
    - La información del paciente debe estar segura
