@@ -14,6 +14,9 @@ Este archivo se actualiza con cada Pull Request para registrar avances y correcc
 - [feature/analista-requerimientos-add-introduccion-md] Definición de requisitos funcionales y no funcionales.  
   PR: [#5](https://github.com/sofinestt/SistemaTurnosMedicos/pull/5) - @sofinestt (Analista de Requerimientos)
 
+- [feature/analista-requerimientos-add-introduccion-md] Agrego archivo changelog.md  
+  PR: [#13](https://github.com/sofinestt/SistemaTurnosMedicos/pull/13) - @sofinestt (Analista de Requerimientos)
+
 ### Changed
 - [feature/analista-requerimientos-add-introduccion-md] Se crea archivo nuevo porque el anterior se cerro por error en la implementación
   PR: [#7](https://github.com/sofinestt/SistemaTurnosMedicos/pull/7) - @sofinestt (Analista de Requerimientos)
