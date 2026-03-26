@@ -57,8 +57,8 @@ Como resultado, se logró completar los RF1, RF2 y RF3, así como también los R
 
 ## 🧠 Comentarios adicionales
 
---- Costo aprender el paso a paso de github, de como subir el archivo y que este este correctamente en su rama.
-Después fue un buen trabajo en Equipo
+--- Tuve dificultades en aprender el paso a paso de github, de como subir el archivo y que este este correctamente en su rama.
+Después fue un buen trabajo en Equipo, con ayuda entre todos los miembros.
 
 ## 🧾 Enlace a la consigna
 
