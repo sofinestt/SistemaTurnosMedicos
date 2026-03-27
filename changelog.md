@@ -17,8 +17,8 @@ Este archivo se actualiza con cada Pull Request para registrar avances y correcc
 - [feature/analista-requerimientos-add-introduccion-md] Agrego archivo changelog.md  
   PR: [#13](https://github.com/sofinestt/SistemaTurnosMedicos/pull/13) - @sofinestt (Analista de Requerimientos)
 
-  - [feature/diseniador-clases-add-boceto-inicial] Agrego boceto inicial de clases y archivos del diagrama en `diagramas/01-diagrama-clases`.
-PR: [#12](https://github.com/sofinestt/SistemaTurnosMedicos/pull/12) - @lucastol-dev (Diseñador de clases iniciales)
+- [feature/diseniador-clases-add-boceto-inicial] Agrego boceto inicial de clases y archivos del diagrama en `diagramas/01-diagrama-clases`.
+PR: [#14](https://github.com/sofinestt/SistemaTurnosMedicos/pull/14) - @lucastol-dev (Diseñador de clases iniciales)
 
 ### Changed
 - [feature/analista-requerimientos-add-introduccion-md] Se crea archivo nuevo porque el anterior se cerro por error en la implementación
