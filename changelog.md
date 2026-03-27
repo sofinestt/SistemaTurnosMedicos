@@ -20,6 +20,7 @@ Este archivo se actualiza con cada Pull Request para registrar avances y correcc
 - [feature/diseniador-clases-add-boceto-inicial] Agrego boceto inicial de clases y archivos del diagrama en `diagramas/01-diagrama-clases`.
 PR: [#14](https://github.com/sofinestt/SistemaTurnosMedicos/pull/14) - @lucastol-dev (Diseñador de clases iniciales)
 
+
 - [feature/modelador-casos-uso-update-use-case-1] Modelado de casos de uso del sistema y actualización de `actividad1.md`. PR: [#10](https://github.com/sofinestt/SistemaTurnosMedicos/pull/10) - @britezacostaalexis-pixel (Modelador de Casos de Uso)
 
 ### Changed
