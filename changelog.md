@@ -27,7 +27,7 @@ Este archivo se actualiza con cada Pull Request para registrar avances y correcc
 
 ---
 
-## [Release Actividad Obligatoria N°1] - 2025-08-10
+## [Release Actividad Obligatoria N°1] - 2026-03-26
 
 Aquí se listarán todas las Pull Requests que entraron en esta release.  
 Actualmente están en la sección [Unreleased] porque sólo están en la rama `develop`.
