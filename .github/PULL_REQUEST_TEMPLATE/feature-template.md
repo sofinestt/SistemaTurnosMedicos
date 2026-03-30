@@ -3,5 +3,5 @@
 ## Cambios realizados
 
 ## Checklist
-- [ ] Cumple con la consigna
-- [ ] No rompe funcionalidades existentes
+- [X] Cumple con la consigna
+- [X] No rompe funcionalidades existentes
