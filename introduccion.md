@@ -95,3 +95,7 @@ No se deben programar:
    - El sistema debe contener datos de los pacientes, asi como su nombre, fecha de nacimiento, dni,  número de teléfono y mail, para poder enviar las notificaciones
    - El sistema debe detectar cuando es un usuario nuevo para que se reserve como "Primera consulta"
    - La información del paciente debe estar segura
+
+## RF1
+
+
