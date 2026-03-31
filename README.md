@@ -24,4 +24,4 @@ El presente proyecto tiene como objetivo desarrollar un sistema de gestión de t
 
 ## Anexos
 
-- [[Anexos](Anexo.md)]
+- [Anexos](Anexo.md)
