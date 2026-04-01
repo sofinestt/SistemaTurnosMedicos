@@ -81,6 +81,7 @@ TipoConsulta (abstracto)
 ## Requisitos iniciales del sistema
 
 > Los siguientes requisitos fueron extraídos de los materiales provistos por el cliente: mail de la secretaria, transcripción de la reunión de kickoff, notas del cuaderno del Dr. Molina, mensajes de WhatsApp y conversaciones de Slack del equipo de desarrollo.
+>  Cuaderno de análisis en NotebookLM: (https://notebooklm.google.com/notebook/b808f1f4-eec6-4b87-8227-de8a3ff5a60b)
 
 ### Requisitos Funcionales
 
@@ -91,7 +92,7 @@ El sistema debe permitir crear, reprogramar y cancelar turnos. Al crear un turno
 El sistema debe impedir que se asignen dos turnos en el mismo horario, salvo cuando el médico autorice explícitamente un sobreturno. Los sobreturnos no se generan automáticamente: deben ser habilitados manualmente por el profesional. El sistema debe registrar que un turno es sobreturno y quién lo autorizó.
 
 **RF3 — Visualización de agenda**
-El sistema debe permitir visualizar la agenda del profesional por día y por semana. La vista debe mostrar los turnos existentes, los horarios bloqueados y los sobreturnos diferenciados. La secretaria y el médico deben poder acceder a esta vista.
+El sistema debe permitir visualizar la agenda del profesional por día y por semana. La vista debe mostrar los turnos existentes, los horarios bloqueados y los sobreturnos diferenciados. La sercretaria y el médico deben poder acceder a esta vista.
 
 **RF4 — Gestión de disponibilidad del profesional**
 El sistema debe permitir definir el horario habitual del profesional (lunes a viernes de 9:00 a 13:00 y de 15:00 a 19:00) y registrar excepciones: días bloqueados por vacaciones, feriados o actividades especiales. Los sábados son opcionales y se definen mes a mes. El sistema no debe permitir agendar turnos en horarios bloqueados.
