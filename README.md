@@ -12,8 +12,8 @@
 
 | Nombre y Apellido | Matrícula | Usuario de GitHub |
 |:-----| -----: | ------: |
-| Sofía Sol Nestmann | 160130 | sofinestt
-| Alexis Matias Britez Acosta | 158100 | britezacostaalexis-pixel
+| Sofía Sol Nestmann | 160130 | @sofinestt
+| Alejo Neicuan | 159810 | @ANeicuan
 | Lucas Ivan Ariel Tolaba | 160163 | lucastol-dev
 | Matías Antonio Ezequiel Caucota | 162050 | matiasmg3232-beep
 --- 
