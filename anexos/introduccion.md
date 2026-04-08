@@ -125,162 +125,75 @@ Toda acción realizada en el sistema debe quedar registrada con fecha, hora y us
 
 ---
 
-## Casos de uso
+# Casos de Uso
+## CU 1 : Registro de Paciente
+   - Actor:  Victoria / Dr.Molina
+   - Objetivo: Permitir un nuevo paciente en el sistema.
+   - Flujo principal: 
+      - **1:** El/La recepcionista accede al sistema.
+      - **2:** Selecciona la opción "Registrar paciente".
+      - **3:** Ingresa los datos del paciente.
+      - **4:** Confirma la información.
+      - **5:** El sistema guarda los datos.
+   - Precondición: El sistema está en funcionamiento.
+   - Postcondición: El paciente queda registrado en el sistema.
+## CU 2 : Agendar Turno
+   - Actor: Victoria / Dr. Molina
+   - Descripción: Permite reservar un espacio de tiempo en la agenda del profesional.
+   - Flujo Principal:
+      - **1:** La secretaria busca disponibilidad en la agenda del profesional.
+      - **2:** Selecciona un horario libre y define el tipo de consulta para que el sistema estime la duración. 
+      - **3:** El sistema valida que el horario este disponible y no haya conflictos con la agenda.
+      - **4:** La secretaria asocia los datos del paciente al turno.
+      - **5:** El sistema confirma la reserva y bloquea el horario.
+   - Precondición: El profesional debe tener su disponibilidad registrada en el sistema.
+   - Postcondición: El turno queda registrado en estado activo y el horario se visualiza como ocupado en la agenda.
+## CU 3 : Reprogramar Turno
+   - Actor: Victoria
+   - Descripción: Modifica la fecha o el horario de un turno ya establecido previamente.
+   - Flujo Principal:
+      - **1:** La secretaria selecciona el turno existente desde la visualización de la agenda.
+      - **2:** Selecciona la nueva fecha y hora solicitada por el paciente.
+      - **3:** El sistema confirma que el nuevo horario solicitado esté disponible.
+      - **4:** Se confirma el cambio, el sistema libera el horario anterior y ocupa el nuevo.
+      - **5:** El sistema registra automáticamente el movimiento en el historial de cambios.
+   - Precondición: Debe existir un turno agendado previamente en el sistema.
+   - Postcondición: El turno se actualiza con la nueva información y el cambio queda registrado para auditoría.
+## CU 4 : Cancelar Turno
+   - Actor: Victoria
+   - Descripción: Permite la cancelación de un turno existente.
+   - Flujo Principal:
+      - **1:** La secretaria busca el turno en la agenda.
+      - **2:** Selecciona la opción de cancelar el turno.
+      - **3:** El sistema solicita el registro del motivo de cancelación y lo guarda en el historial de cambios.
+      - **4:** El sistema cambia el estado del turno a "cancelado" y libera el horario bloqueado.
+      - **5:** El sistema notifica la cancelación del turno.
+   - Precondición: Debe existir un turno previamente agendado.
+   - Postcondición: El horario queda disponible nuevamente y se registra en el historial de cambios.
+## CU 5 : Registro de llegada del paciente (Check-in)
+   - Actor: Victoria
+   - Descripción: Registrar la llegada del paciente al consultorio.
+   - Flujo Principal:
+      - **1:** El paciente llega a la recepción.
+      - **2:** La secretaria busca el turno del paciente en la agenda.
+      - **3:** La secretaria marca al paciente como "presente".
+      - **4:** El sistema registra la hora real de llegada del paciente
+      - **5:** El sistema envia una notificación automática al profesional anunciando la llegada del paciente.
+   - Precondición: El paciente debe tener un turno agendada para la fecha.
+   - Postcondición: El estado de presencia es visible para el profesional en su agenda, permitiéndole organizar el flujo de atención.
+## CU 6 : Autorización de Sobreturno
+   - Actores : Dr. Molina / Victoria
+   - Descripción: Agregar turno en un horario ya ocupado o fuera del esquema habitual.
+   - Flujo Principal:
+      - **1:** La secretaria identifica un caso de urgencia o insistencia del paciente donde no hay disponibildad.
+      - **2:** La secretaria consulta al profesional sobre la posibilidad de agendar un sobreturno.
+      - **3:** El profesional autoriza la excepción(Limite de 2 sobreturnos)
+      - **4:** La secretaria confirma e ingresa el nuevo turno en el sistema.
+      - **5:** El sistema permite la superposición de un horario específico y registra la marca de Sobreturno.
+   - Precondición: El horario solicitado debe estar ocupado o bloqueado por el sistema.
+   - Postcondición: Se crea un turno adicional superpuesto que el profesional visualiza en su agenda diaria.
 
-### CU1 — Crear turno
 
-**Actor principal:** Secretaria  
-**Actores secundarios:** Paciente (origen de la solicitud), Médico (dueño de la agenda)
-
-**Descripción:** La secretaria registra un nuevo turno en la agenda del profesional a partir de una solicitud del paciente.
-
-**Precondiciones:**
-- El paciente existe en el sistema o sus datos están disponibles para registrarlo.
-- El profesional tiene horario disponible en la franja solicitada.
-- La secretaria tiene sesión iniciada en el sistema.
-
-**Flujo principal:**
-1. La secretaria selecciona la opción "Nuevo turno" en el sistema.
-2. El sistema solicita los datos del paciente (nombre, DNI o identificador).
-3. La secretaria ingresa o selecciona el paciente existente.
-4. El sistema solicita fecha, hora y tipo de consulta (Control o Primera vez).
-5. La secretaria ingresa los datos del turno.
-6. El sistema verifica que el horario esté disponible y no exista superposición.
-7. El sistema registra el turno y lo muestra en la agenda del profesional.
-8. El sistema envía una notificación de confirmación al paciente.
-
-**Flujos alternativos:**
-- *Horario ocupado:* En el paso 6, si el horario no está disponible, el sistema informa el conflicto y sugiere horarios alternativos. La secretaria puede seleccionar uno o consultar con el médico para autorizar un sobreturno.
-- *Paciente nuevo:* En el paso 3, si el paciente no existe, el sistema permite registrarlo con sus datos básicos antes de continuar.
-
-**Postcondiciones:**
-- El turno queda registrado en la agenda del profesional.
-- El paciente recibe notificación de confirmación.
-- El evento queda registrado en el historial de cambios.
-
----
-
-### CU2 — Reprogramar turno
-
-**Actor principal:** Secretaria  
-**Actores secundarios:** Paciente (afectado por el cambio)
-
-**Descripción:** La secretaria modifica la fecha u hora de un turno existente, ya sea por solicitud del paciente o por necesidad del consultorio.
-
-**Precondiciones:**
-- El turno existe en el sistema y está en estado activo.
-- La secretaria tiene sesión iniciada.
-
-**Flujo principal:**
-1. La secretaria busca el turno a modificar por nombre del paciente o fecha.
-2. El sistema muestra los datos del turno actual.
-3. La secretaria selecciona la opción "Reprogramar".
-4. El sistema solicita la nueva fecha y hora.
-5. La secretaria ingresa el nuevo horario deseado.
-6. El sistema verifica disponibilidad en el nuevo horario.
-7. El sistema actualiza el turno con la nueva fecha y hora.
-8. El sistema registra el cambio en el historial (quién reprogramó, cuándo, desde qué horario hacia cuál).
-9. El sistema envía notificación al paciente informando el nuevo horario.
-
-**Flujos alternativos:**
-- *Nuevo horario ocupado:* En el paso 6, el sistema informa el conflicto y la secretaria debe elegir otro horario.
-
-**Postcondiciones:**
-- El turno refleja el nuevo horario.
-- El paciente fue notificado del cambio.
-- El historial registra la reprogramación con todos sus datos.
-
----
-
-### CU3 — Cancelar turno
-
-**Actor principal:** Secretaria o Paciente  
-**Actores secundarios:** Médico (puede ser afectado)
-
-**Descripción:** Un turno existente es cancelado, ya sea por solicitud del paciente o por decisión del consultorio.
-
-**Precondiciones:**
-- El turno existe y está en estado activo.
-- El actor que cancela tiene los permisos correspondientes.
-
-**Flujo principal:**
-1. El actor (secretaria o paciente) selecciona el turno a cancelar.
-2. El sistema muestra los datos del turno.
-3. El actor confirma la cancelación.
-4. El sistema cambia el estado del turno a "Cancelado".
-5. El sistema registra la cancelación en el historial: quién canceló, fecha y hora de la cancelación.
-6. El sistema envía notificación al paciente confirmando la cancelación.
-7. Si corresponde, el sistema notifica al médico del cambio en su agenda.
-
-**Flujos alternativos:**
-- *Cancelación por paciente:* El paciente solo puede cancelar sus propios turnos. El sistema registra que la cancelación fue iniciada por el paciente.
-
-**Postcondiciones:**
-- El turno queda en estado "Cancelado" y el horario queda libre en la agenda.
-- El historial registra la cancelación con todos sus datos.
-- El paciente fue notificado.
-
----
-
-### CU4 — Autorizar sobreturno
-
-**Actor principal:** Médico  
-**Actores secundarios:** Secretaria (ejecuta la carga una vez autorizado)
-
-**Descripción:** El médico habilita manualmente un sobreturno en un horario que ya tiene otro turno asignado, cuando considera necesario atender a un paciente adicional.
-
-**Precondiciones:**
-- El médico tiene sesión iniciada en el sistema.
-- Existe al menos un turno en el horario donde se quiere agregar el sobreturno.
-
-**Flujo principal:**
-1. El médico accede a su agenda y visualiza el horario con conflicto.
-2. El médico selecciona la opción "Autorizar sobreturno" para ese horario.
-3. El sistema solicita confirmación explícita del médico.
-4. El médico confirma la autorización.
-5. El sistema registra el sobreturno como autorizado, indicando el médico que autorizó y el momento de la autorización.
-6. La secretaria puede ahora crear el turno adicional en ese horario.
-7. El sistema muestra el sobreturno diferenciado visualmente en la agenda.
-
-**Flujos alternativos:**
-- *Médico no disponible:* Si el médico no está presente, el sobreturno no puede ser autorizado, salvo urgencia real evaluada caso por caso.
-
-**Postcondiciones:**
-- El sobreturno queda registrado como autorizado por el médico.
-- La secretaria puede proceder a cargar el turno adicional.
-- El evento queda en el historial.
-
----
-
-### CU5 — Registrar llegada del paciente
-
-**Actor principal:** Secretaria  
-**Actores secundarios:** Paciente (se presenta físicamente), Médico (ve el estado en su agenda)
-
-**Descripción:** La secretaria registra que el paciente llegó físicamente al consultorio, indicando la hora real de arribo.
-
-**Precondiciones:**
-- Existe un turno activo para el paciente en el día actual.
-- La secretaria tiene sesión iniciada.
-- El paciente se presentó en recepción.
-
-**Flujo principal:**
-1. La secretaria busca el turno del paciente por nombre o por la agenda del día.
-2. El sistema muestra el turno con su horario previsto.
-3. La secretaria selecciona la opción "Registrar llegada".
-4. El sistema registra la hora actual como hora real de llegada del paciente.
-5. El sistema crea un registro de presencia asociado al turno.
-6. El sistema actualiza el estado del turno a "Paciente presente".
-7. El médico puede ver en su agenda que el paciente ya está en sala de espera.
-
-**Flujos alternativos:**
-- *Paciente tardío:* Si el paciente llega después de los 10 minutos de tolerancia, el sistema registra igualmente la llegada pero la secretaria debe consultar al médico si lo atiende o reprograma. El médico decide caso por caso.
-- *Paciente no llega:* Si el paciente no se presenta, no se crea ningún registro de presencia. El turno puede marcarse como "Ausente" al finalizar el horario.
-
-**Postcondiciones:**
-- El registro de llegada queda guardado con la hora real de arribo.
-- El médico puede ver el estado actualizado en su agenda.
-- Si el paciente llegó tarde, queda registrado para referencia futura.
 
 ---
 
