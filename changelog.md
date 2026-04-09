@@ -39,3 +39,6 @@ Este archivo se actualiza con cada Pull Request para registrar avances y correcc
 
 - [release/actividad-obligatoria-1] Corrección de estructura de carpetas, reemplazo de introduccion.md con contenido completo (POO, 4 fundamentos, RF, RNF, casos de uso), corrección de anexos.md, README.md y changelog.md.
   PR: [#16](https://github.com/sofinestt/SistemaTurnosMedicos/pull/16) – @ademarco97 (Analista de Requerimientos)
+
+- [release/actividad-obligatoria-1] Correción de CUs, cambio de integrantes en README.md y changelog.md
+  PR [#18](https://github.com/sofinestt/SistemaTurnosMedicos/pull/18) - @ANeicuan (Modelador de Casos de Uso)
