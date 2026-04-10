@@ -41,4 +41,4 @@ Este archivo se actualiza con cada Pull Request para registrar avances y correcc
   PR: [#16](https://github.com/sofinestt/SistemaTurnosMedicos/pull/16) – @ademarco97 (Analista de Requerimientos)
 
 - [release/actividad-obligatoria-1] Correción de CUs, cambio de integrantes en README.md y changelog.md
-  PR [#18](https://github.com/sofinestt/SistemaTurnosMedicos/pull/18) - @ANeicuan (Modelador de Casos de Uso)
+  PR: [#18](https://github.com/sofinestt/SistemaTurnosMedicos/pull/18) - @ANeicuan (Modelador de Casos de Uso)
