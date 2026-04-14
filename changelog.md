@@ -27,6 +27,7 @@ PR: [#14](https://github.com/sofinestt/SistemaTurnosMedicos/pull/14) - @lucastol
 - Diagramas de casos de uso en formato .puml y .png
 - Índice general de diagramas UML (`diagramasUML.md`)
 - Índice específico de casos de uso (`diagramas_de_casos_de_uso.md`)
+- Entrada al changelog
 
 PR: [#21] (https://github.com/sofinestt/SistemaTurnosMedicos/pull/21) -
 
@@ -41,6 +42,10 @@ PR: [#21] (https://github.com/sofinestt/SistemaTurnosMedicos/pull/21) -
 ### Fixed
 - [feature/analista-requerimientos-add-introudccion-md] Se cerró PR anterior por errores en la implementación.  
   PR: [#6](https://github.com/sofinestt/SistemaTurnosMedicos/pull/6) - @sofinestt (Analista de Requerimientos)
+
+- [feature/modelador-diag-casos-uso]
+-Borro archivo "escenarios de casos de uso"
+PR: [#21] (https://github.com/sofinestt/SistemaTurnosMedicos/pull/21) -
 
 ---
 
