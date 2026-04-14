@@ -27,7 +27,6 @@ PR: [#14](https://github.com/sofinestt/SistemaTurnosMedicos/pull/14) - @lucastol
 - Diagramas de casos de uso en formato .puml y .png
 - Índice general de diagramas UML (`diagramasUML.md`)
 - Índice específico de casos de uso (`diagramas_de_casos_de_uso.md`)
-- Archivo de escenarios de casos de uso (`escenarios_casos_de_uso.md`)
 
 PR: [#21] (https://github.com/sofinestt/SistemaTurnosMedicos/pull/21) -
 

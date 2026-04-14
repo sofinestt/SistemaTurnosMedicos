@@ -29,9 +29,3 @@ Estos documentos contienen los diagramas de casos de uso del sistema de turnos m
   [Ver diagrama](./05-caso-uso-horarios.png)  
   [Ver código PlantUML](./05-caso-uso-horarios.puml)
 
-
-# Escenarios de Casos de Uso
-
-Este documento contiene los escenarios de Casos de Uso con sus descripciones
-
-[Ver archivo](./escenarios_casos_de_uso.md)
