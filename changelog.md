@@ -41,6 +41,25 @@ Este archivo se actualiza con cada Pull Request para registrar avances y correcc
   PR: [#16](https://github.com/sofinestt/SistemaTurnosMedicos/pull/16) – @ademarco97 (Analista de Requerimientos)
 
 - [release/actividad-obligatoria-1] Correción de CUs, cambio de integrantes en README.md y changelog.md
+  PR [#18](https://github.com/sofinestt/SistemaTurnosMedicos/pull/18) - @ANeicuan (Modelador de Casos de Uso)
+
+- [release/actividad-obligatoria-1] Corrección de contenido de CUs
+  Commit: [9141cd1](https://github.com/sofinestt/SistemaTurnosMedicos/commit/9141cd1) — @ANeicuan (Modelador de Casos de Uso)
+
+- [release/actividad-obligatoria-1] Cambio de integrantes en README.md
+  Commit: [0feb772](https://github.com/sofinestt/SistemaTurnosMedicos/commit/0feb772) — @ANeicuan (Modelador de Casos de Uso)
+
+- [release/actividad-obligatoria-1] Corrección de CUs, integrantes en README.md y colon en changelog
+  Commit: [cdf1c3b](https://github.com/sofinestt/SistemaTurnosMedicos/commit/cdf1c3b) — @ANeicuan (Modelador de Casos de Uso)
+
+- [release/actividad-obligatoria-1] Corrección de templates release y feature
+  Commit: [d52c758](https://github.com/sofinestt/SistemaTurnosMedicos/commit/d52c758) — @ANeicuan (Modelador de Casos de Uso)
+
+- [release/actividad-obligatoria-1] Corrección de actores en CUs y formato en PR #18
+  Commit: [aff242b](https://github.com/sofinestt/SistemaTurnosMedicos/commit/aff242b) — @ANeicuan (Modelador de Casos de Uso)
+
+- [release/actividad-obligatoria-1] Corrección de nombre de la materia en README.md
+  Commit: [32ff2fd](https://github.com/sofinestt/SistemaTurnosMedicos/commit/32ff2fd) — @ANeicuan (Modelador de Casos de Uso)
   PR: [#18](https://github.com/sofinestt/SistemaTurnosMedicos/pull/18) - @ANeicuan (Modelador de Casos de Uso)
 
   -[fix/modelador-casos-de-uso-fix] Creación de rama fix con correcciones de casos de uso
