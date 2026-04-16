@@ -60,3 +60,8 @@ Este archivo se actualiza con cada Pull Request para registrar avances y correcc
 
 - [release/actividad-obligatoria-1] Corrección de nombre de la materia en README.md
   Commit: [32ff2fd](https://github.com/sofinestt/SistemaTurnosMedicos/commit/32ff2fd) — @ANeicuan (Modelador de Casos de Uso)
+  PR: [#18](https://github.com/sofinestt/SistemaTurnosMedicos/pull/18) - @ANeicuan (Modelador de Casos de Uso)
+
+  -[fix/modelador-casos-de-uso-fix] Creación de rama fix con correcciones de casos de uso
+  PR: [#23] (https://github.com/sofinestt/SistemaTurnosMedicos/pull/23) -@sofinestt (Modelador de Diagramas de casos de uso)
+  

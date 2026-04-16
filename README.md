@@ -1,7 +1,7 @@
 #  Sistema Turnos Medicos - Diseño Orientado a Objetos
 
  
-- **Materia:** Diseño Orientado a Objeto   
+- **Materia:** Diseño Orientado a Objetos   
 - **Carrera:** Técnicatura en Programación de Sistemas  
 - **Profesor:** Lic. Matías Velasquez  
 - **Grupo:** Grupo 5
