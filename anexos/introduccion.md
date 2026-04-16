@@ -137,6 +137,7 @@ Toda acción realizada en el sistema debe quedar registrada con fecha, hora y us
       - **5:** El sistema guarda los datos.
    - Precondición: El sistema está en funcionamiento.
    - Postcondición: El paciente queda registrado en el sistema.
+   
 ## CU 2 : Agendar Turno
    - Actor: Secretaria / Médico
    - Descripción: Permite reservar un espacio de tiempo en la agenda del profesional.
@@ -148,6 +149,7 @@ Toda acción realizada en el sistema debe quedar registrada con fecha, hora y us
       - **5:** El sistema confirma la reserva y bloquea el horario.
    - Precondición: El profesional debe tener su disponibilidad registrada en el sistema.
    - Postcondición: El turno queda registrado en estado activo y el horario se visualiza como ocupado en la agenda.
+
 ## CU 3 : Reprogramar Turno
    - Actor: Secretaria
    - Descripción: Modifica la fecha o el horario de un turno ya establecido previamente.
@@ -159,6 +161,7 @@ Toda acción realizada en el sistema debe quedar registrada con fecha, hora y us
       - **5:** El sistema registra automáticamente el movimiento en el historial de cambios.
    - Precondición: Debe existir un turno agendado previamente en el sistema.
    - Postcondición: El turno se actualiza con la nueva información y el cambio queda registrado para auditoría.
+
 ## CU 4 : Cancelar Turno
    - Actor: Secretaria
    - Descripción: Permite la cancelación de un turno existente.
@@ -170,6 +173,7 @@ Toda acción realizada en el sistema debe quedar registrada con fecha, hora y us
       - **5:** El sistema notifica la cancelación del turno.
    - Precondición: Debe existir un turno previamente agendado.
    - Postcondición: El horario queda disponible nuevamente y se registra en el historial de cambios.
+
 ## CU 5 : Registro de llegada del paciente (Check-in)
    - Actor: Secretaria
    - Descripción: Registrar la llegada del paciente al consultorio.
@@ -181,6 +185,7 @@ Toda acción realizada en el sistema debe quedar registrada con fecha, hora y us
       - **5:** El sistema envia una notificación automática al profesional anunciando la llegada del paciente.
    - Precondición: El paciente debe tener un turno agendada para la fecha.
    - Postcondición: El estado de presencia es visible para el profesional en su agenda, permitiéndole organizar el flujo de atención.
+
 ## CU 6 : Autorización de Sobreturno
    - Actores : Médico / Secretaria
    - Descripción: Agregar turno en un horario ya ocupado o fuera del esquema habitual.
