@@ -92,7 +92,7 @@ El sistema debe permitir crear, reprogramar y cancelar turnos. Al crear un turno
 El sistema debe impedir que se asignen dos turnos en el mismo horario, salvo cuando el médico autorice explícitamente un sobreturno. Los sobreturnos no se generan automáticamente: deben ser habilitados manualmente por el profesional. El sistema debe registrar que un turno es sobreturno y quién lo autorizó.
 
 **RF3 — Visualización de agenda**
-El sistema debe permitir visualizar la agenda del profesional por día y por semana. La vista debe mostrar los turnos existentes, los horarios bloqueados y los sobreturnos diferenciados. La sercretaria y el médico deben poder acceder a esta vista.
+El sistema debe permitir visualizar la agenda del profesional por día y por semana. La vista debe mostrar los turnos existentes, los horarios bloqueados y los sobreturnos diferenciados. La secretaria y el médico deben poder acceder a esta vista.
 
 **RF4 — Gestión de disponibilidad del profesional**
 El sistema debe permitir definir el horario habitual del profesional (lunes a viernes de 9:00 a 13:00 y de 15:00 a 19:00) y registrar excepciones: días bloqueados por vacaciones, feriados o actividades especiales. Los sábados son opcionales y se definen mes a mes. El sistema no debe permitir agendar turnos en horarios bloqueados.
@@ -182,7 +182,7 @@ Toda acción realizada en el sistema debe quedar registrada con fecha, hora y us
       - **2:** La secretaria busca el turno del paciente en la agenda.
       - **3:** La secretaria marca al paciente como "presente".
       - **4:** El sistema registra la hora real de llegada del paciente
-      - **5:** El sistema envia una notificación automática al profesional anunciando la llegada del paciente.
+      - **5:** El sistema envía una notificación automática al profesional anunciando la llegada del paciente.
    - Precondición: El paciente debe tener un turno agendada para la fecha.
    - Postcondición: El estado de presencia es visible para el profesional en su agenda, permitiéndole organizar el flujo de atención.
 
@@ -192,7 +192,7 @@ Toda acción realizada en el sistema debe quedar registrada con fecha, hora y us
    - Flujo Principal:
       - **1:** La secretaria identifica un caso de urgencia o insistencia del paciente donde no hay disponibildad.
       - **2:** La secretaria consulta al profesional sobre la posibilidad de agendar un sobreturno.
-      - **3:** El profesional autoriza la excepción(Limite de 2 sobreturnos)
+      - **3:** El profesional autoriza la excepción (limite de 2 sobreturnos)
       - **4:** La secretaria confirma e ingresa el nuevo turno en el sistema.
       - **5:** El sistema permite la superposición de un horario específico y registra la marca de Sobreturno.
    - Precondición: El horario solicitado debe estar ocupado o bloqueado por el sistema.
