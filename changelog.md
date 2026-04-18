@@ -30,6 +30,8 @@ Este archivo se actualiza con cada Pull Request para registrar avances y correcc
 - [feature/espec-escenarios-casos-uso-add-escenario-1] Se agregan escenarios de casos de uso, índice y prompt de ia
   PR: [#31](https://github.com/sofinestt/SistemaTurnosMedicos/pull/32) - @ANeicuan (Especialista de Casos de Uso)
 
+- [feature/modelador-casos-uso-update-use-case-1] Modelado de casos de uso del sistema y actualización de `actividad1.md`. PR: [#10](https://github.com/sofinestt/SistemaTurnosMedicos/pull/10) - @britezacostaalexis-pixel (Modelador de Casos de Uso)
+
 ### Changed
 
 - [feature/analista-requerimientos-add-introduccion-md] Se creó archivo nuevo porque el anterior se cerró por error.
