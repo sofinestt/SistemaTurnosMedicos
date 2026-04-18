@@ -38,7 +38,11 @@ Este archivo se actualiza con cada Pull Request para registrar avances y correcc
 - Índice específico de casos de uso (`diagramas_de_casos_de_uso.md`)
 - Entrada al changelog
 
-PR: [#21] (https://github.com/sofinestt/SistemaTurnosMedicos/pull/21) -
+PR: [#21] (https://github.com/sofinestt/SistemaTurnosMedicos/pull/21) - @sofinestt (Modelador de casos de uso)
+
+
+[feature/diseniador-tarjetas-crc-add-tarjeta-clase-1]- Se agregan tarjetas CRC y documentación de uso de IA. PR: [#34] (https://github.com/sofinestt/SistemaTurnosMedicos/pull/34) - @ademarco97 (Diseñador de tarjetas CRC)
+
 
 ### Changed
 
@@ -84,3 +88,4 @@ PR: [#21] (https://github.com/sofinestt/SistemaTurnosMedicos/pull/21) -
                                                                                                                                                                                         
 - [fix/modelador-casos-de-uso-fix] Registro de PR #27 en changelog
   PR: [#28](https://github.com/sofinestt/SistemaTurnosMedicos/pull/28) - @sofinestt (Analista de Requerimientos)
+
