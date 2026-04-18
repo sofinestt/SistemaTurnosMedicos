@@ -37,12 +37,6 @@ Este archivo se actualiza con cada Pull Request para registrar avances y correcc
 - [feature/analista-requerimientos-add-introduccion-md] Se cerró PR anterior por errores en la implementación.
   PR: [#6](https://github.com/sofinestt/SistemaTurnosMedicos/pull/6) – @sofinestt (Analista de Requerimientos)
 
-- [release/actividad-obligatoria-1] Corrección de estructura de carpetas, reemplazo de introduccion.md con contenido completo (POO, 4 fundamentos, RF, RNF, casos de uso), corrección de anexos.md, README.md y changelog.md.
-  PR: [#16](https://github.com/sofinestt/SistemaTurnosMedicos/pull/16) – @ademarco97 (Analista de Requerimientos)
-
-- [release/actividad-obligatoria-1] Correción de CUs, cambio de integrantes en README.md y changelog.md
-  PR [#18](https://github.com/sofinestt/SistemaTurnosMedicos/pull/18) - @ANeicuan (Modelador de Casos de Uso)
-
 - [release/actividad-obligatoria-1] Corrección de contenido de CUs
   Commit: [9141cd1](https://github.com/sofinestt/SistemaTurnosMedicos/commit/9141cd1) — @ANeicuan (Modelador de Casos de Uso)
 
@@ -61,5 +55,8 @@ Este archivo se actualiza con cada Pull Request para registrar avances y correcc
 - [release/actividad-obligatoria-1] Corrección de nombre de la materia en README.md
   Commit: [32ff2fd](https://github.com/sofinestt/SistemaTurnosMedicos/commit/32ff2fd) — @ANeicuan (Modelador de Casos de Uso)
 
-
-  
+- [fix/changelog-readme] Corrección de entradas incorrectas en changelog.md
+  PR: [#27](https://github.com/sofinestt/SistemaTurnosMedicos/pull/27) — @ANeicuan (Modelador de Casos de Uso)
+                                                                                                                                                                                        
+- [fix/modelador-casos-de-uso-fix] Registro de PR #27 en changelog
+  PR: [#28](https://github.com/sofinestt/SistemaTurnosMedicos/pull/28) - @sofinestt (Analista de Requerimientos)
