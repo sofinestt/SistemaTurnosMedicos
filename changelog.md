@@ -27,6 +27,9 @@ Este archivo se actualiza con cada Pull Request para registrar avances y correcc
 - [feature/doc-coord-repo] Estructura de carpetas, README.md y coordinación del repositorio. PR cerrada sin merge — trabajo no integrado al flujo.
   PR: [#11](https://github.com/sofinestt/SistemaTurnosMedicos/pull/11) – @matiasmg3232-beep (Documentador y Coordinador)
 
+
+- [feature/modelador-casos-uso-update-use-case-1] Modelado de casos de uso del sistema y actualización de `actividad1.md`. PR: [#10](https://github.com/sofinestt/SistemaTurnosMedicos/pull/10) - @britezacostaalexis-pixel (Modelador de Casos de Uso)
+
 ### Changed
 
 - [feature/analista-requerimientos-add-introduccion-md] Se creó archivo nuevo porque el anterior se cerró por error.
