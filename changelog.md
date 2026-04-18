@@ -30,13 +30,32 @@ Este archivo se actualiza con cada Pull Request para registrar avances y correcc
 
 - [feature/modelador-casos-uso-update-use-case-1] Modelado de casos de uso del sistema y actualización de `actividad1.md`. PR: [#10](https://github.com/sofinestt/SistemaTurnosMedicos/pull/10) - @britezacostaalexis-pixel (Modelador de Casos de Uso)
 
+- [feature/modelador-diag-casos-uso]
+- Diagramas de casos de uso en formato .puml y .png
+- Índice general de diagramas UML (`diagramasUML.md`)
+- Índice específico de casos de uso (`diagramas_de_casos_de_uso.md`)
+- Entrada al changelog
+
+PR: [#21] (https://github.com/sofinestt/SistemaTurnosMedicos/pull/21) -
+
 ### Changed
 
 - [feature/analista-requerimientos-add-introduccion-md] Se creó archivo nuevo porque el anterior se cerró por error.
   PR: [#7](https://github.com/sofinestt/SistemaTurnosMedicos/pull/7) – @sofinestt (Analista de Requerimientos)
 
+- [feature/modelador-diag-casos-uso]
+- Organización de carpetas en `diagramas/`
+PR: [#21] (https://github.com/sofinestt/SistemaTurnosMedicos/pull/21) -
+
 ### Fixed
 
+- [feature/modelador-diag-casos-uso]
+-Borro archivo "escenarios de casos de uso"
+PR: [#21] (https://github.com/sofinestt/SistemaTurnosMedicos/pull/21) -
+
+---
+
+## [Release Actividad Obligatoria N°1] - 2026-04-14
 - [feature/analista-requerimientos-add-introduccion-md] Se cerró PR anterior por errores en la implementación.
   PR: [#6](https://github.com/sofinestt/SistemaTurnosMedicos/pull/6) – @sofinestt (Analista de Requerimientos)
 
