@@ -1,11 +1,11 @@
-# 📦 [GRUPO N°8][Actividad Obligatoria N°1] Entrega Final - Release a master
+# 📦 [GRUPO N°8][Actividad Obligatoria N°2] Entrega Final - Release a master
 
 
 ---
 
 ## 🧾 Descripción General de la Entrega
 
-Esta Pull Request representa la **entrega final de la Actividad Obligatoria N°1**. Incluye la integración de los aportes realizados por todos los integrantes del grupo, previamente mergeados en `develop`.
+Esta Pull Request representa la **entrega final de la Actividad Obligatoria N°2**. Incluye la integración de los aportes realizados por todos los integrantes del grupo, previamente mergeados en `develop`.
 
 ---
 
@@ -14,9 +14,9 @@ Esta Pull Request representa la **entrega final de la Actividad Obligatoria N°1
 | Nombre completo | Rol asignado en esta entrega | Usuario GitHub |
 |-----------------|-------------------------------|----------------|
 | Agustín de Marco        | Analista de Requerimientos    | @ademarco97      |
-|        | Modelador de Casos de Uso     |       | 
+|        | Modelador de Casos de Uso     | @sofinestt      | 
 | Alejo Neicuan        | Diseñador de Clases Iniciales | @ANeicuan      |
-| Sofia Nestmann       | Documentador y Coordinador    | @sofinestt      |
+| Sofia Nestmann       | Documentador y Coordinador    |    |
 
 ---
 
@@ -32,12 +32,12 @@ Esta Pull Request representa la **entrega final de la Actividad Obligatoria N°1
 
 ## 📋 Checklist de revisión antes de merge
 
-- [ ] Todas las ramas `feature/*` fueron mergeadas en `develop`.
-- [ ] Se resolvieron todos los conflictos.
-- [ ] La estructura de carpetas y archivos sigue el formato solicitado.
-- [ ] Se completó correctamente el archivo `changelog.md`.
-- [ ] Se revisaron los comentarios de revisión en cada PR individual.
-- [ ] Esta Pull Request se realiza desde `release/actividad-obligatoria-1` hacia `master`.
+- [X] Todas las ramas `feature/*` fueron mergeadas en `develop`.
+- [X] Se resolvieron todos los conflictos.
+- [X] La estructura de carpetas y archivos sigue el formato solicitado.
+- [X] Se completó correctamente el archivo `changelog.md`.
+- [X] Se revisaron los comentarios de revisión en cada PR individual.
+- [X] Esta Pull Request se realiza desde `release/actividad-obligatoria-1` hacia `master`.
 - [ ] Se notificó en el canal de Slack con el formato correcto.
 
 ---
@@ -46,7 +46,7 @@ Esta Pull Request representa la **entrega final de la Actividad Obligatoria N°1
 
 Una vez creada esta Pull Request, notificamos en el canal:
 
-[Actividad Obligatoria N°1][GRUPO X](enlace a esta Pull Request)
+[Actividad Obligatoria N°2][GRUPO X](enlace a esta Pull Request)
 
 
 Posteriormente iniciamos un hilo mencionando a @Matias Velasquez, indicando el contenido general de la entrega.  
