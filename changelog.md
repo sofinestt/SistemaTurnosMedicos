@@ -29,6 +29,9 @@ PR: [#21] (https://github.com/sofinestt/SistemaTurnosMedicos/pull/21) -
 - [feature/modelador-diag-casos-uso] Borro archivo "escenarios de casos de uso"
 PR: [#21] (https://github.com/sofinestt/SistemaTurnosMedicos/pull/21) -
 
+[fix/correcciones-actividad-obligatoria-2.0] Se crea nueva PR con correcciones 
+PR: [#42] (https://github.com/sofinestt/SistemaTurnosMedicos/pull/42)
+@sofinestt (Modelador de casos de uso)
 
 
 ## [Release Actividad Obligatoria N°1] - 2026-03-26
