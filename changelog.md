@@ -6,7 +6,30 @@ Este archivo se actualiza con cada Pull Request para registrar avances y correcc
 
 ## [Unreleased]
 
----
+## [Release Actividad Obligatoria N°2] - 2026-04-20
+
+### Added
+
+- [feature/espec-escenarios-casos-uso-add-escenario-1] Se agregan escenarios de casos de uso, índice y prompt de iaExpand commentComment on line R30Resolved
+  PR: [#31](https://github.com/sofinestt/SistemaTurnosMedicos/pull/32) - @ANeicuan (Especialista de Casos de Uso)
+
+- [feature/modelador-diag-casos-uso]- Se agregan diagramas de casos de uso en formato .puml y .png, Índices y entrada al changelog.
+PR: [#21] (https://github.com/sofinestt/SistemaTurnosMedicos/pull/21) - @sofinestt (Modelador de casos de uso)
+
+[feature/diseniador-tarjetas-crc-add-tarjeta-clase-1]- Se agregan tarjetas CRC y documentación de uso de IA. 
+PR: [#34] (https://github.com/sofinestt/SistemaTurnosMedicos/pull/34) - @ademarco97 (Diseñador de tarjetas CRC)
+
+
+### Changed
+- [feature/modelador-diag-casos-uso] Organización de carpetas en `diagramas/`
+PR: [#21] (https://github.com/sofinestt/SistemaTurnosMedicos/pull/21) -
+
+### Fixed
+
+- [feature/modelador-diag-casos-uso] Borro archivo "escenarios de casos de uso"
+PR: [#21] (https://github.com/sofinestt/SistemaTurnosMedicos/pull/21) -
+
+
 
 ## [Release Actividad Obligatoria N°1] - 2026-03-26
 
@@ -27,41 +50,13 @@ Este archivo se actualiza con cada Pull Request para registrar avances y correcc
 - [feature/doc-coord-repo] Estructura de carpetas, README.md y coordinación del repositorio. PR cerrada sin merge — trabajo no integrado al flujo.
   PR: [#11](https://github.com/sofinestt/SistemaTurnosMedicos/pull/11) – @matiasmg3232-beep (Documentador y Coordinador)
 
-- [feature/espec-escenarios-casos-uso-add-escenario-1] Se agregan escenarios de casos de uso, índice y prompt de ia
-  PR: [#31](https://github.com/sofinestt/SistemaTurnosMedicos/pull/32) - @ANeicuan (Especialista de Casos de Uso)
-
-- [feature/modelador-casos-uso-update-use-case-1] Modelado de casos de uso del sistema y actualización de `actividad1.md`. PR: [#10](https://github.com/sofinestt/SistemaTurnosMedicos/pull/10) - @britezacostaalexis-pixel (Modelador de Casos de Uso)
-
-- [feature/modelador-diag-casos-uso]
-- Diagramas de casos de uso en formato .puml y .png
-- Índice general de diagramas UML (`diagramasUML.md`)
-- Índice específico de casos de uso (`diagramas_de_casos_de_uso.md`)
-- Entrada al changelog
-
-PR: [#21] (https://github.com/sofinestt/SistemaTurnosMedicos/pull/21) - @sofinestt (Modelador de casos de uso)
-
-
-[feature/diseniador-tarjetas-crc-add-tarjeta-clase-1]- Se agregan tarjetas CRC y documentación de uso de IA. PR: [#34] (https://github.com/sofinestt/SistemaTurnosMedicos/pull/34) - @ademarco97 (Diseñador de tarjetas CRC)
-
-
 ### Changed
 
 - [feature/analista-requerimientos-add-introduccion-md] Se creó archivo nuevo porque el anterior se cerró por error.
   PR: [#7](https://github.com/sofinestt/SistemaTurnosMedicos/pull/7) – @sofinestt (Analista de Requerimientos)
 
-- [feature/modelador-diag-casos-uso]
-- Organización de carpetas en `diagramas/`
-PR: [#21] (https://github.com/sofinestt/SistemaTurnosMedicos/pull/21) -
-
 ### Fixed
 
-- [feature/modelador-diag-casos-uso]
--Borro archivo "escenarios de casos de uso"
-PR: [#21] (https://github.com/sofinestt/SistemaTurnosMedicos/pull/21) -
-
----
-
-## [Release Actividad Obligatoria N°1] - 2026-04-14
 - [feature/analista-requerimientos-add-introduccion-md] Se cerró PR anterior por errores en la implementación.
   PR: [#6](https://github.com/sofinestt/SistemaTurnosMedicos/pull/6) – @sofinestt (Analista de Requerimientos)
 
@@ -84,8 +79,6 @@ PR: [#21] (https://github.com/sofinestt/SistemaTurnosMedicos/pull/21) -
   Commit: [32ff2fd](https://github.com/sofinestt/SistemaTurnosMedicos/commit/32ff2fd) — @ANeicuan (Modelador de Casos de Uso)
 
 - [fix/changelog-readme] Corrección de entradas incorrectas en changelog.md
-  PR: [#27](https://github.com/sofinestt/SistemaTurnosMedicos/pull/27) — @ANeicuan (Modelador de Casos de Uso)
-                                                                                                                                                                                        
+  PR: [#27](https://github.com/sofinestt/SistemaTurnosMedicos/pull/27) — @ANeicuan (Modelador de Casos de Uso)                                                                                                                                              
 - [fix/modelador-casos-de-uso-fix] Registro de PR #27 en changelog
   PR: [#28](https://github.com/sofinestt/SistemaTurnosMedicos/pull/28) - @sofinestt (Analista de Requerimientos)
-
