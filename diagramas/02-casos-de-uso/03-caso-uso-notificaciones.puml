@@ -1,0 +1,11 @@
+@startuml
+actor Paciente
+actor Secretaria
+
+Secretaria --> (Notificar al paciente)
+Paciente --> (Confirmar recepción de notificación)
+
+(Notificar al paciente) --> (Enviar recordatorio por mail) : <<include>>
+(Notificar al paciente) --> (Enviar recordatorio por whatsapp) : <<include>>
+
+@enduml
