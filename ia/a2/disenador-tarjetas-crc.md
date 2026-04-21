@@ -11,7 +11,7 @@ Se utilizó como base el archivo:
 
 ## Prompt utilizado
 
-
+```
 Leé los siguientes archivos como contexto del sistema:
 - anexos/introduccion.md
 - diagramas/01-diagrama-clases/01-boceto-inicial.excalidraw
@@ -51,6 +51,7 @@ No des explicaciones generales, solo mostrar:
 2) observaciones críticas
 3) versión final corregida
 
+```
 ## Resultados obtenidos
 
 Copilot generó un conjunto inicial de tarjetas CRC que incluían las clases principales del sistema, como Paciente, Médico, Turno, Recepción y Sistema de Turnos. Las tarjetas contenían responsabilidades, colaboradores, propiedades y el pensamiento del objeto.
