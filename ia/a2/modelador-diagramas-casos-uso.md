@@ -11,9 +11,10 @@ Se utilizó como base el archivo:
 
 ## Prompt utilizado
 
+
 Se solicitó a Copilot la generación de casos de uso y diagramas en PlantUML a partir del contexto del sistema de turnos médicos, incluyendo actores, casos de uso y relaciones <<include>> y <<extend>>.
 
-
+```
 Leé el archivo anexos/introduccion.md y utilizalo como contexto para el sistema de gestión de turnos médicos.
 
 Generá una lista de casos de uso relevantes del sistema, identificando:
@@ -30,6 +31,8 @@ Asegurate de que:
 - Se utilicen correctamente las relaciones <<include>> y <<extend>>
 
 No inventes funcionalidades que no estén justificadas en el contexto.
+
+```
 
 ## Resultados obtenidos
 

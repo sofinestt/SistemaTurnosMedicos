@@ -1,5 +1,17 @@
+# Uso de IA - Diseñador Tarjetas CRC
+
+## Herramienta utilizada
+
+Se utilizó GitHub Copilot (Agent Mode) integrado en VS Code.
+
+## Contexto proporcionado
+
+Se utilizó como base el archivo:
+- anexos/introduccion.md
+
 # Prompt Utilizado
 
+```
 Actuá como un Software Engineer senior especializado en análisis de requisitos y modelado de casos de uso.
 
 Tu tarea es leer cuidadosamente el archivo anexos/introduccion.md junto con la plantilla de escenarios disponible en el proyecto, y completar todos los campos de cada escenario de forma clara, consistente y profesional.
@@ -69,3 +81,6 @@ Completá los escenarios usando la plantilla existente en el proyecto. Si no est
 | **Aspectos sobresalientes:** |  |
 | **Prioridad:** | (Alta - Media -Baja) |
 | **Riesgo:** | (Alto - Medio -Bajo) |
+
+```
+
