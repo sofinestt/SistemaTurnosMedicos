@@ -6,11 +6,11 @@ Estos documentos contienen los diagramas de casos de uso del sistema de turnos m
 
 - **Caso de uso Paciente**  
   Actor: Paciente  
-  [Ver diagrama](./01-caso-uso-paciente.png.png)  
+  [Ver diagrama](./01-caso-uso-paciente.png)  
   [Ver código PlantUML](./01-caso-uso-paciente.puml)
 
 - **Caso de uso Secretaria**  
-  Actor: Paciente  
+  Actor: Secretaria  
   [Ver diagrama](./02-caso-uso-secretaria.png)  
   [Ver código PlantUML](./02-caso-uso-secretaria.puml)
 

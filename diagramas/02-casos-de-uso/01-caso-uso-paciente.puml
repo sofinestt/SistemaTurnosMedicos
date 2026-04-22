@@ -1,4 +1,7 @@
 @startuml
+
+rectangle "Sistema de Turnos Médicos" {
+  usecase "Agendar Turno" as UC1
 actor Paciente
 
 Paciente --> (Visualizar turnos disponibles)
@@ -8,6 +11,7 @@ Paciente --> (Cancelar turno)
 (Agendar turno) --> (Validar disponibilidad) : <<include>>
 (Agendar turno) --> (Visualizar turnos disponibles) : <<include>>
 
-(Cancelar turno) --> (Notificar cancelación) : <<extend>>
+(Cancelar turno) --> (Notificar cancelación) : <<include>>
 
+}
 @enduml
