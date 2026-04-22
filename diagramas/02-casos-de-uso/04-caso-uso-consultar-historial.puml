@@ -1,20 +1,34 @@
-@startuml
+﻿@startuml
 actor Secretaria
 actor Medico
 
-Secretaria --> (Agendar turno)
-Secretaria --> (Reprogramar turno)
-Secretaria --> (Cancelar turno)
-Secretaria --> (Registrar llegada del paciente)
+rectangle "Sistema de Turnos Médicos" {
+  usecase "Consultar historial" as UC1
+  usecase "Agendar turno" as UC2
+  usecase "Reprogramar turno" as UC3
+  usecase "Cancelar turno" as UC4
+  usecase "Registrar llegada del paciente" as UC5
+  usecase "Atender turno" as UC6
+  usecase "Consultar turnos del día" as UC7
+  usecase "Registrar hora real de llegada" as UC8
+  usecase "Registrar historial de cambios" as UC9
 
-Medico --> (Atender turno)
-Medico --> (Consultar turnos del día)
+  Secretaria --> (UC1)
+  Medico --> (UC1)
 
-(Registrar llegada del paciente) --> (Registrar hora real de llegada) : <<include>>
+  Secretaria --> (UC2)
+  Secretaria --> (UC3)
+  Secretaria --> (UC4)
+  Secretaria --> (UC5)
 
-(Agendar turno) --> (Registrar historial de cambios) : <<include>>
-(Reprogramar turno) --> (Registrar historial de cambios) : <<include>>
-(Cancelar turno) --> (Registrar historial de cambios) : <<include>>
-(Registrar llegada del paciente) --> (Registrar historial de cambios) : <<include>>
+  Medico --> (UC6)
+  Medico --> (UC7)
 
+  (UC5) --> (UC8) : <<include>>
+
+  (UC2) --> (UC9) : <<include>>
+  (UC3) --> (UC9) : <<include>>
+  (UC4) --> (UC9) : <<include>>
+  (UC5) --> (UC9) : <<include>>
+}
 @enduml

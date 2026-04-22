@@ -1,17 +1,24 @@
-@startuml name
+﻿@startuml
 actor Secretaria
 actor Medico
 
-Secretaria --> (Gestionar disponibilidad de horarios)
-Secretaria --> (Bloquear horario por vacaciones o feriado)
-Secretaria --> (Configurar horario habitual)
+rectangle "Sistema de Turnos Médicos" {
+  usecase "Gestionar disponibilidad de horarios" as UC1
+  usecase "Bloquear horario por vacaciones o feriado" as UC2
+  usecase "Configurar horario habitual" as UC3
+  usecase "Asignar sobreturno" as UC4
+  usecase "Validar reglas del consultorio" as UC5
 
-Medico --> (Asignar sobreturno)
+  Secretaria --> (UC1)
+  Secretaria --> (UC2)
+  Secretaria --> (UC3)
 
-(Gestionar disponibilidad de horarios) --> (Bloquear horario por vacaciones o feriado) : <<include>>
-(Gestionar disponibilidad de horarios) --> (Configurar horario habitual) : <<include>>
+  Medico --> (UC4)
 
-(Gestionar disponibilidad de horarios) --> (Validar reglas del consultorio) : <<include>>
-(Asignar sobreturno) --> (Validar reglas del consultorio) : <<include>>
+  (UC1) --> (UC2) : <<include>>
+  (UC1) --> (UC3) : <<include>>
 
+  (UC1) --> (UC5) : <<include>>
+  (UC4) --> (UC5) : <<include>>
+}
 @enduml
