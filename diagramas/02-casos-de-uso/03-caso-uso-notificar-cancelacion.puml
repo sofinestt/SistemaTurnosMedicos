@@ -1,0 +1,17 @@
+﻿@startuml
+actor Paciente
+actor Secretaria
+
+rectangle "Sistema de Turnos Médicos" {
+  usecase "Notificar al paciente" as UC1
+  usecase "Confirmar recepción de notificación" as UC2
+  usecase "Enviar recordatorio por mail" as UC3
+  usecase "Enviar recordatorio por whatsapp" as UC4
+
+  Secretaria --> (UC1)
+  Paciente --> (UC2)
+
+  (UC1) --> (UC3) : <<include>>
+  (UC1) --> (UC4) : <<include>>
+}
+@enduml
