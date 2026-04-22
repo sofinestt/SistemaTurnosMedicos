@@ -25,10 +25,11 @@ PR: [#34](https://github.com/sofinestt/SistemaTurnosMedicos/pull/34) - @ademarco
 
 [fix/correcciones-actividad-obligatoria-2.0] Se crea nueva PR con correcciones 
 PR: [#42](https://github.com/sofinestt/SistemaTurnosMedicos/pull/42)
-@sofinestt (Modelador de casos de uso)
+@sofinestt (Modeladora de casos de uso)
 
-[fix/correciones-actividad-obligatoria-2.0] Se crea la tarjeta CRC "Llegada Paciente" y se corrige la tarjeta Turno. Se realizan correcciones en ia/a2 y las entradas en el archivo changelog. PR:[#42](https://github.com/sofinestt/SistemaTurnosMedicos/pull/42) @sofinestt (Modelador de casos de uso)
+[fix/correciones-actividad-obligatoria-2.0] Se crea la tarjeta CRC "Llegada Paciente" y se corrige la tarjeta Turno. Se realizan correcciones en ia/a2 y las entradas en el archivo changelog. PR:[#42](https://github.com/sofinestt/SistemaTurnosMedicos/pull/42) @sofinestt (Modeladora de casos de uso)
 
+[fix/diag-casos-de-uso-fix-2] Se corrigen archivos de diagramas de CUs, nombres en indice diagramas_de_casos_de_uso.md y contenido de diagramasUML.md. PR [#43](https://github.com/sofinestt/SistemaTurnosMedicos/pull/43) @sofinestt (Modeladora de casos de uso)
 
 
 
