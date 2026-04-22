@@ -63,3 +63,6 @@ PR: [#42](https://github.com/sofinestt/SistemaTurnosMedicos/pull/42)
   PR: [#27](https://github.com/sofinestt/SistemaTurnosMedicos/pull/27) — @ANeicuan (Modelador de Casos de Uso)                                                                                                                                              
 - [fix/modelador-casos-de-uso-fix] Registro de PR #27 en changelog
   PR: [#28](https://github.com/sofinestt/SistemaTurnosMedicos/pull/28) - @sofinestt (Analista de Requerimientos)
+- [fix/escenarios-indice] Se corrige formato de escenarios de casos de uso.
+  PR: [#45](https://github.com/sofinestt/SistemaTurnosMedicos/pull/45) - @ANeicuan (Especialista de Casos de Uso)
+  
