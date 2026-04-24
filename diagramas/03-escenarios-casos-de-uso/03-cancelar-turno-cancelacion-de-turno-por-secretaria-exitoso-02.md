@@ -1,6 +1,6 @@
-| **Nombre del escenario:** | Flujo principal - Cancelación de turno por secretaria | | | |
+| **Nombre del escenario:** | Flujo principal - Cancelación de turno por secretaria exitoso | | | |
 |---|---|---|---|---|
-| **Nombre del caso de uso:** | Cancelar Turno | | **ID Única:** | 02 |
+| **Nombre del caso de uso:** | Cancelar Turno | | **ID Única:** | CU-02 |
 | **Área** | Sistema de Turnos Médicos - Gestión de Turnos | | | |
 | **Actor(es):** | Secretaria | | | |
 | **Descripción:** | Permite a la secretaria cancelar un turno existente, registrando el motivo de la cancelación y liberando el horario en la agenda. | | | |
