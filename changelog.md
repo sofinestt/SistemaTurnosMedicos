@@ -31,7 +31,7 @@ PR: [#42](https://github.com/sofinestt/SistemaTurnosMedicos/pull/42)
 
 [fix/diag-casos-de-uso-fix-2] Se corrigen archivos de diagramas de CUs, nombres en indice diagramas_de_casos_de_uso.md y contenido de diagramasUML.md. PR [#43](https://github.com/sofinestt/SistemaTurnosMedicos/pull/43) @sofinestt (Modeladora de casos de uso)
 
-
+[fix/correcciones-act-2-fix] Se corrigieron Indices, Indices en tarjetas CRC y archivo README. PR[#46](https://github.com/sofinestt/SistemaTurnosMedicos/pull/46) @sofinestt (Diseñadora y cordinadora del Repositorio)
 
 ## [Release Actividad Obligatoria N°1] - 2026-04-14
 
