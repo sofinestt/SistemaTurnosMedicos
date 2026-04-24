@@ -1,6 +1,6 @@
-| **Nombre del escenario:** | Flujo principal - Autorización de sobreturno | | | |
+| **Nombre del escenario:** | Flujo principal - Autorización de sobreturno exitoso | | | |
 |---|---|---|---|---|
-| **Nombre del caso de uso:** | Autorizar Sobreturno | | **ID Única:** | 04 |
+| **Nombre del caso de uso:** | Autorizar Sobreturno | | **ID Única:** | CU-04 |
 | **Área** | Sistema de Turnos Médicos - Gestión de Agenda | | | |
 | **Actor(es):** | Médico | | | |
 | **Descripción:** | Permite al médico autorizar la asignación de un sobreturno en su agenda para atender a un paciente fuera de la disponibilidad regular. | | | |

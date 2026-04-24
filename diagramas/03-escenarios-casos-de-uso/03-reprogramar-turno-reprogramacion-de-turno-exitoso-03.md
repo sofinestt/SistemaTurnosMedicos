@@ -1,6 +1,6 @@
-| **Nombre del escenario:** | Flujo principal - Reprogramación de turno  | | | |
+| **Nombre del escenario:** | Flujo principal - Reprogramación de turno exitoso | | | |
 |---|---|---|---|---|
-| **Nombre del caso de uso:** | Reprogramar Turno | | **ID Única:** | 03 |
+| **Nombre del caso de uso:** | Reprogramar Turno | | **ID Única:** | CU-03 |
 | **Área** | Sistema de Turnos Médicos - Gestión de Turnos | | | |
 | **Actor(es):** | Secretaria | | | |
 | **Descripción:** | Permite a la secretaria modificar la fecha y/o el horario de un turno previamente agendado, asegurando disponibilidad y registrando el cambio. | | | |

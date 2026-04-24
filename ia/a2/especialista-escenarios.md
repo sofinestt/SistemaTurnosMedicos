@@ -1,4 +1,4 @@
-# Uso de IA - Diseñador Tarjetas CRC
+# Uso de IA - Especialista de Casos de Uso
 
 ## Herramienta utilizada
 
@@ -84,3 +84,26 @@ Completá los escenarios usando la plantilla existente en el proyecto. Si no est
 
 ```
 
+## Resultados obtenidos
+
+A partir del prompt definido y de los casos de uso, se generaron 5 escenarios de casos de us del Sistema Turnos Médicos.
+
+La generación incluyó:
+- Validaciones de negocio implícitas no detalladas originalmente (por ejemplo conflictos de agenda, duplicidad de registros, trazabilidad de cambios).
+- Identificación de riesgos operativos(Concurrencia, Sobrecarga de agenda, Inconsistencias).
+- Justificación de prioridad y riesgo para cada escenario.
+
+## Ajustes Realizados
+
+Se revisó críticamente y ajustó el resultado incial generado por IA en los siguientes puntos:
+
+- Se eliminaron pasos redundantes.
+- Se agregaron pasos faltantes
+- Se mejoró la secuencia actor-sistema para que refleje correctamente interacciones de casos de uso.
+- Se completaron precondiciones incompletas
+- Se ajustaron postcondiciones para reflejar cambios de estado. liberación de agenda y trazabilidad.
+
+## Conclusión
+
+El uso de IA agilizó y facilitó el proceso para la creación de los escenarios de casos de uso.
+útil como punto de partida, para luego de la revisión, realizar los cambios necesarios. 
