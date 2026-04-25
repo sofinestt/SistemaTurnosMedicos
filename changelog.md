@@ -24,6 +24,10 @@ Este archivo se actualiza con cada Pull Request para registrar avances y correcc
 
 - [fix/correcciones-finales-fix] Se agrego archivo documentador-coordinador.md. Se hacen correciones a changelog.md. PR[#49](https://github.com/sofinestt/SistemaTurnosMedicos/pull/49) - @sofinestt (Diseñadora y cordinadora del Repositorio)
 
+- [fix/correcciones-fix] Se modifica changelog y se hacen correcciones en diagramas de CUs. PR[#50](https://github.com/sofinestt/SistemaTurnosMedicos/pull/50) - @sofinestt (Diseñadora y cordinadora del Repositorio)
+
+
+
 ## [Release Actividad Obligatoria N°1] - 2026-04-14
 
 ### Added
