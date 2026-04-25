@@ -13,7 +13,7 @@ rectangle "Sistema de Turnos Médicos" {
   Secretaria --> (UC2)
   Secretaria --> (UC3)
 
-  (UC2) --> (UC4) : <<extend>>
+  (UC2) --> (UC4) : <<include>>
   (UC2) --> (UC1) : <<extend>>
 
   (UC3) --> (UC5) : <<include>>
