@@ -8,14 +8,11 @@ Este archivo se actualiza con cada Pull Request para registrar avances y correcc
 
 ### Added
 
-- [feature/espec-escenarios-casos-uso-add-escenario-1] Se agregan escenarios de casos de uso, índice y prompt de ia
-  PR: [#32](https://github.com/sofinestt/SistemaTurnosMedicos/pull/32) - @ANeicuan (Especialista de Casos de Uso)
+- [feature/espec-escenarios-casos-uso-add-escenario-1] Se agregan escenarios de casos de uso, índice y prompt de ia. PR: [#32](https://github.com/sofinestt/SistemaTurnosMedicos/pull/32) - @ANeicuan (Especialista de Casos de Uso)
 
-- [feature/modelador-diag-casos-uso]- Se agregan diagramas de casos de uso en formato .puml y .png, Índices UML y entrada al changelog.
-PR: [#21](https://github.com/sofinestt/SistemaTurnosMedicos/pull/21) - @sofinestt (Modelador de casos de uso)
+- [feature/modelador-diag-casos-uso]- Se agregan diagramas de casos de uso en formato .puml y .png, Índices UML y entrada al changelog. PR: [#21](https://github.com/sofinestt/SistemaTurnosMedicos/pull/21) - @sofinestt (Modelador de casos de uso)
 
-- [feature/diseniador-tarjetas-crc-add-tarjeta-clase-1]- Se agregan tarjetas CRC y documentación de uso de IA. 
-PR: [#34](https://github.com/sofinestt/SistemaTurnosMedicos/pull/34) - @ademarco97 (Diseñador de tarjetas CRC)
+- [feature/diseniador-tarjetas-crc-add-tarjeta-clase-1]- Se agregan tarjetas CRC y documentación de uso de IA. PR: [#34](https://github.com/sofinestt/SistemaTurnosMedicos/pull/34) - @ademarco97 (Diseñador de tarjetas CRC)
 
 ### Fixed
 
