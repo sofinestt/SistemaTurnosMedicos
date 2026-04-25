@@ -10,12 +10,11 @@ rectangle "Sistema de Turnos Médicos" {
   usecase "Notificar cancelación" as UC5
 
   Paciente --> (UC1)
-  Paciente --> (UC2)
-  Paciente --> (UC3)
+  Secretaria --> (UC2)
   Secretaria --> (UC3)
 
   (UC2) --> (UC4) : <<include>>
-  (UC2) --> (UC1) : <<include>>
+  (UC2) --> (UC1) : <<extend>>
 
   (UC3) --> (UC5) : <<include>>
 

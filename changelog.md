@@ -8,30 +8,25 @@ Este archivo se actualiza con cada Pull Request para registrar avances y correcc
 
 ### Added
 
-- [feature/espec-escenarios-casos-uso-add-escenario-1] Se agregan escenarios de casos de uso, índice y prompt de iaExpand commentComment on line R30Resolved
-  PR: [#32](https://github.com/sofinestt/SistemaTurnosMedicos/pull/32) - @ANeicuan (Especialista de Casos de Uso)
+- [feature/espec-escenarios-casos-uso-add-escenario-1] Se agregan escenarios de casos de uso, índice y prompt de ia. PR: [#32](https://github.com/sofinestt/SistemaTurnosMedicos/pull/32) - @ANeicuan (Especialista de Casos de Uso)
 
-- [feature/modelador-diag-casos-uso]- Se agregan diagramas de casos de uso en formato .puml y .png, Índices UML y entrada al changelog.
-PR: [#21](https://github.com/sofinestt/SistemaTurnosMedicos/pull/21) - @sofinestt (Modelador de casos de uso)
+- [feature/modelador-diag-casos-uso]- Se agregan diagramas de casos de uso en formato .puml y .png, Índices UML y entrada al changelog. PR: [#21](https://github.com/sofinestt/SistemaTurnosMedicos/pull/21) - @sofinestt (Modelador de casos de uso)
 
-[feature/diseniador-tarjetas-crc-add-tarjeta-clase-1]- Se agregan tarjetas CRC y documentación de uso de IA. 
-PR: [#34](https://github.com/sofinestt/SistemaTurnosMedicos/pull/34) - @ademarco97 (Diseñador de tarjetas CRC)
-
-
-### Changed
-
+- [feature/diseniador-tarjetas-crc-add-tarjeta-clase-1]- Se agregan tarjetas CRC y documentación de uso de IA. PR: [#34](https://github.com/sofinestt/SistemaTurnosMedicos/pull/34) - @ademarco97 (Diseñador de tarjetas CRC)
 
 ### Fixed
 
-[fix/correcciones-actividad-obligatoria-2.0] Se crea nueva PR con correcciones 
-PR: [#42](https://github.com/sofinestt/SistemaTurnosMedicos/pull/42)
-@sofinestt (Modeladora de casos de uso)
+- [fix/correcciones-actividad-obligatoria-2.0] Correcciones A2: LlegadaPaciente CRC, Turno, ia/a2. PR: [#42](https://github.com/sofinestt/SistemaTurnosMedicos/pull/42) - @sofinestt (Modeladora de Diagramas de CU)
 
-[fix/correciones-actividad-obligatoria-2.0] Se crea la tarjeta CRC "Llegada Paciente" y se corrige la tarjeta Turno. Se realizan correcciones en ia/a2 y las entradas en el archivo changelog. PR:[#42](https://github.com/sofinestt/SistemaTurnosMedicos/pull/42) @sofinestt (Modeladora de casos de uso)
+- [fix/diag-casos-de-uso-fix-2] Se corrigen archivos de diagramas de CUs, nombres en indice diagramas_de_casos_de_uso.md y contenido de diagramasUML.md. PR [#43](https://github.com/sofinestt/SistemaTurnosMedicos/pull/43) - @sofinestt (Modeladora de casos de uso)
 
-[fix/diag-casos-de-uso-fix-2] Se corrigen archivos de diagramas de CUs, nombres en indice diagramas_de_casos_de_uso.md y contenido de diagramasUML.md. PR [#43](https://github.com/sofinestt/SistemaTurnosMedicos/pull/43) @sofinestt (Modeladora de casos de uso)
+- [fix/correcciones-act-2-fix] Se corrigieron Indices, Indices en tarjetas CRC y archivo README. PR[#46](https://github.com/sofinestt/SistemaTurnosMedicos/pull/46) - @sofinestt(Diseñadora y cordinadora del Repositorio)
 
-[fix/correcciones-act-2-fix] Se corrigieron Indices, Indices en tarjetas CRC y archivo README. PR[#46](https://github.com/sofinestt/SistemaTurnosMedicos/pull/46) @sofinestt (Diseñadora y cordinadora del Repositorio)
+- [fix/correcciones-finales-fix] Se agrego archivo documentador-coordinador.md. Se hacen correciones a changelog.md. PR[#49](https://github.com/sofinestt/SistemaTurnosMedicos/pull/49) - @sofinestt (Diseñadora y cordinadora del Repositorio)
+
+- [fix/correcciones-fix] Se modifica changelog y se hacen correcciones en diagramas de CUs. PR[#50](https://github.com/sofinestt/SistemaTurnosMedicos/pull/50) - @sofinestt (Diseñadora y cordinadora del Repositorio)
+
+
 
 ## [Release Actividad Obligatoria N°1] - 2026-04-14
 
