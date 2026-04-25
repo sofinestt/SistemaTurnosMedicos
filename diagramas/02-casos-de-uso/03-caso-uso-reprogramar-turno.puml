@@ -1,9 +1,5 @@
-@startuml
-
+@startuml 
 actor Secretaria
-rectangle "Sistema de Turnos Médicos" {
-  usecase "Reprogramar turno" as UC3
-  Secretaria --> UC3
-}
-
-@enduml
+rectangle "Sistema de Turnos Médicos"
+{ usecase "Reprogramar turno" as UC3 Secretaria --> (UC3) }
+ @enduml
