@@ -54,3 +54,13 @@ Los resultados fueron revisados y modificados manualmente para mejorar la calida
 ## Conclusión
 
 El uso de Copilot permitió acelerar la generación inicial de los diagramas, pero fue necesario un análisis y ajuste manual para garantizar su coherencia con el sistema y cumplir con las buenas prácticas de modelado UML.
+
+## Iteraciones
+### Iteración 1: Estructura Base
+Se generaron los diagramas iniciales para los 5 procesos principales (Registro, Agenda, Cancelación, Reprogramación y Disponibilidad). La IA propuso una estructura estándar de actor-sistema.
+
+### Iteración 2: Refinamiento de Lógica de Sobreturnos
+Se detectó que el proceso de **Autorizar Sobreturno** era más crítico para el negocio que la reprogramación básica. Se solicitó a la IA reestructurar el archivo `03-caso-uso-reprogramar-turno.puml` para transformarlo en el diagrama de **Autorización de Sobreturno**, integrando al Médico como actor principal de la decisión.
+
+### Iteración 3: Incorporación de Relaciones de Inclusión
+Para cumplir con el **RF2 (Control de superposición)**, se agregaron relaciones `<<include>>` hacia los casos de uso "Validar reglas del consultorio" y "Registrar marca de sobreturno", asegurando que el diagrama refleje no solo la acción, sino también las validaciones y la trazabilidad requeridas.

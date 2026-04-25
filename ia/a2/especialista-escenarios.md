@@ -107,3 +107,13 @@ Se revisó críticamente y ajustó el resultado incial generado por IA en los si
 
 El uso de IA agilizó y facilitó el proceso para la creación de los escenarios de casos de uso.
 útil como punto de partida, para luego de la revisión, realizar los cambios necesarios. 
+
+## Iteraciones
+### Iteración 1: Generación de Escenarios Base
+Se utilizó la IA para generar los flujos principales de los 5 casos de uso iniciales siguiendo la plantilla de Markdown. En esta etapa, los flujos eran lineales y omitían excepciones o validaciones de reglas de negocio específicas (como la validación de horarios).
+
+### Iteración 2: Refinamiento de Validaciones y Riesgos
+Se solicitó a la IA profundizar en los campos de "Aspectos sobresalientes" y "Riesgos". Se añadieron validaciones críticas de concurrencia y conflictos de agenda. Se ajustó el escenario de **Registro de llegada (Check-in)** para asegurar que se capture la hora real de arribo, cumpliendo con el RF6.
+
+### Iteración 3: Ajuste por Cambio de Alcance (Sobreturnos)
+Tras la decisión de priorizar la **Autorización de Sobreturno** sobre la reprogramación simple, se generó el escenario detallado para el CU-03. Se puso especial énfasis en la interacción entre la Secretaria y el Médico (autorización manual) y en la postcondición de registro de auditoría, vinculándolo con el requerimiento de trazabilidad (RF7).

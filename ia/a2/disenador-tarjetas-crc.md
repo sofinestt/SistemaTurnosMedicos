@@ -76,3 +76,13 @@ Se realizaron las siguientes mejoras sobre la salida generada por la IA:
 El uso de GitHub Copilot permitió acelerar la identificación de clases y la generación inicial de las tarjetas CRC. Sin embargo, fue necesaria una revisión crítica para corregir errores de modelado y asegurar la coherencia del diseño.
 
 La IA resultó útil como punto de partida, pero el resultado final dependió del análisis y ajustes realizados manualmente.
+
+## Iteraciones
+### Iteración 1: Generación de Estructura Básica
+Se utilizó el contexto de la introducción y el boceto inicial para obtener las tarjetas de las entidades principales (`Paciente`, `Medico`, `Turno`, `Agenda`). En esta etapa, la IA propuso responsabilidades algo genéricas y el colaborador "Sistema" aparecía con frecuencia en lugar de clases específicas.
+
+### Iteración 2: Refinamiento de Colaboradores y Encapsulamiento
+Se ajustaron los colaboradores para que apunten a clases concretas dentro del modelo. Se redistribuyeron responsabilidades críticas; por ejemplo, se movió la lógica de validación de conflictos de la clase `Turno` hacia la clase `Agenda` para respetar el principio de encapsulamiento definido en los requerimientos del RF1.
+
+### Iteración 3: Implementación de la Jerarquía y Lógica de Sobreturnos
+Se formalizó la herencia mediante la creación de la superclase `Persona`, vinculando a `Paciente`, `Medico` y `Secretaria` para evitar duplicación de atributos. Asimismo, se actualizó la clase `Turno` para incluir la propiedad `esSobreturno` y se asignó al `Medico` la responsabilidad de autorizar dichas excepciones, manteniendo la coherencia con el Caso de Uso 03.
