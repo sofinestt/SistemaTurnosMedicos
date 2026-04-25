@@ -1,0 +1,18 @@
+@startuml
+
+actor Secretaria
+actor Medico
+
+rectangle "Sistema de Turnos Médicos" {
+  usecase "Autorizar sobreturno" as UC1
+  usecase "Validar reglas del consultorio" as UC2
+  usecase "Registrar marca de sobreturno" as UC3
+
+  (UC1) ..> (UC2) : <<include>>
+  (UC1) ..> (UC3) : <<include>>
+}
+
+Secretaria --> UC1
+Medico --> UC1
+
+@enduml
