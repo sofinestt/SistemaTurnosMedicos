@@ -1,6 +1,5 @@
 @startuml
 
-actor Secretaria
 actor Medico
 
 rectangle "Sistema de Turnos Médicos" {
@@ -11,8 +10,6 @@ rectangle "Sistema de Turnos Médicos" {
   (UC1) ..> (UC2) : <<include>>
   (UC1) ..> (UC3) : <<include>>
 }
-
-Secretaria --> UC1
 Medico --> UC1
 
 @enduml
