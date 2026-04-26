@@ -1,0 +1,75 @@
+@startuml diagrama-lsp-jerarquias
+
+' ============================================
+' DIAGRAMA 1: Jerarquía Persona (con problemas LSP)
+' ============================================
+
+package "Jerarquía Persona - Análisis LSP" {
+    abstract class Persona {
+        -nombre: String
+        -apellido: String
+        -telefono: String
+        -mail: String
+        +getNombre(): String
+        +getApellido(): String
+        +getTelefono(): String
+        +getMail(): String
+    }
+
+    class Paciente {
+        -dni: String
+        -fechaNacimiento: Date
+        +pedirTurno()
+        +cancelarTurno()
+    }
+
+    class Medico {
+        -especialidad: String
+        -matricula: String
+        +consultarAgenda()
+        +autorizarSobreturno()
+        +definirDisponibilidad()
+    }
+
+    class Secretaria {
+        +gestionarTurnos()
+        +registrarCambios()
+        +notificarPacientes()
+    }
+}
+
+Persona <|-- Paciente
+Persona <|-- Medico
+Persona <|-- Secretaria
+
+note right of Persona
+  <b>Contrato:</b>
+  - nombre, apellido, telefono, mail
+  <b>Problema:</b>
+  Secretaria no agrega propiedades
+  nuevas. Es un "falso subtipo".
+end note
+
+note right of Paciente
+  <b>Cumple LSP:</b>
+  +dni, fechaNacimiento
+  Agrega comportamiento
+end note
+
+note right of Medico
+  <b>Cumple LSP:</b>
+  +especialidad, matricula
+  Agrega comportamiento
+end note
+
+note right of Secretaria
+  <b>⚠️ Problema LSP:</b>
+  No agrega propiedades.
+  Es un ROL operativo,
+  no una entidad.
+  <b>Recomendación:</b>
+  Usar composición
+  en lugar de herencia
+end note
+
+@enduml
