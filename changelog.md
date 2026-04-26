@@ -4,6 +4,12 @@ Este archivo se actualiza con cada Pull Request para registrar avances y correcc
 
 ---
 
+## [Release Primer Parcial] - 2026-04-25
+
+### Added
+- [feature/esp-extension-ocp-add-anexo-ocp] Se agregan diagramas UML y PNG, principios SOLID (OCP) y Documenta el uso de IA.
+  PR [#58](https://github.com/sofinestt/SistemaTurnosMedicos/pull/58) - @ANeicuan (Especialista en Principios de Extensión OCP)
+
 ## [Release Actividad Obligatoria N°2] - 2026-04-20
 
 ### Added
