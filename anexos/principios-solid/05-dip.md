@@ -24,6 +24,7 @@ Se utilizan para que las clases dependan de abstracciones en lugar de implementa
 
 ![Diagrama DIP](../../diagramas/01-diagrama-clases/01-solid-05-dip.png)
 
+
 ## Justificación técnica
 
 Se propone crear la interfaz ICanalNotificacion, que sea implementada por distintas clases como:
@@ -55,4 +56,4 @@ Esto permite mayor flexibilidad y facilita el testing.
 
 Se descartaron algunas abstracciones propuestas, como interfaces para los roles (IPaciente, IMedico), ya que no aportan directamente a la inversión de dependencias.
 
-Se priorizó trabajar sobre componentes del sistema que requieren desacoplamiento, como el envío de notificaciones.
+Se priorizó trabajar sobre componentes del sistema que 
