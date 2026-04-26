@@ -4,6 +4,14 @@ Este archivo se actualiza con cada Pull Request para registrar avances y correcc
 
 ---
 
+
+## [Release Primer Parcial ] - 2026-04-27
+
+### Added
+
+- [feature/esp-isp-add-anexo-isp] Se aplicó ISP en el sistema, refinando interfaces y eliminando responsabilidades mal agrupadas. Se actualizaron la documentación y el diagrama UML. PR:[#60](https://github.com/sofinestt/SistemaTurnosMedicos/pull/60) - @sofinestt (Especialista en Segregacion de Interfaces)
+
+
 ## [Release Actividad Obligatoria N°2] - 2026-04-20
 
 ### Added
