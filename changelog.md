@@ -4,6 +4,14 @@ Este archivo se actualiza con cada Pull Request para registrar avances y correcc
 
 ---
 
+## [Release Primer Parcial] - 2026-04-25
+
+### Added
+
+- [feature/esp-dip-add-anexo-dip1] Se agregó documentación del uso de IA y aplicación del DIP, se actualizó el principio DIP y se modificó el diagrama de clases del módulo de notificaciones. PR [#56](https://github.com/sofinestt/SistemaTurnosMedicos/pull/56)- @sofinestt (Especialista en Inversion de Dependencias)
+
+
+
 ## [Release Actividad Obligatoria N°2] - 2026-04-20
 
 ### Added
