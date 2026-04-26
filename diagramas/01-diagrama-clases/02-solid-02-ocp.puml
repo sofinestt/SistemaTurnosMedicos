@@ -1,0 +1,23 @@
+@startuml diagrama-ocp-disponibilidad
+class Disponibilidad {
+    +bloqueoHorario : int
+    +diasBloqueados : int
+    +motivoBloqueo : String    
+}
+class Agenda {
+    +disponibilidad : String
+    +turnos : String
+}
+class Medico {
+    -nombre : String
+    -Apellido : String    
+    -especialidad : String
+}
+class Secretaria {
+    -nombre : String
+    -Apellido : String
+}
+Disponibilidad o-- Agenda
+Agenda <-- Medico
+Agenda <-- Secretaria
+@enduml
