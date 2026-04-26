@@ -20,7 +20,6 @@ Se utilizan para que las clases dependan de abstracciones en lugar de implementa
 
 ## Estructura de clases
 
-(ACÁ después insertás la imagen del diagrama)
 
 ![Diagrama DIP](../../diagramas/01-diagrama-clases/01-solid-05-dip.png)
 

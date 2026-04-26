@@ -1,12 +1,13 @@
-@startuml
+@startuml name
 
 interface ICanalNotificacion {
-  +enviar(mensaje, destinatario)
+  +enviar(mensaje: String, destinatario: String): void
 }
 
 class Notificacion {
   -canal: ICanalNotificacion
-  +enviarNotificacion()
+  +Notificacion(canal: ICanalNotificacion)
+  +enviarNotificacion(mensaje: String, destinatario: String): void
 }
 
 class NotificacionEmail
