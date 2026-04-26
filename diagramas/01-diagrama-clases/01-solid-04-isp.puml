@@ -1,0 +1,32 @@
+@startuml
+interface IDatosPersona
+interface IClienteTurnos
+interface IProfesionalAgenda
+interface IGestorTurnos
+interface INotificador
+interface ITurnoDatos
+interface ICicloVidaTurno
+interface IGestorDisponibilidad
+class Paciente
+class Medico
+class Secretaria
+class Turno
+class Agenda
+class Disponibilidad
+class Notificacion
+Paciente -[dashed]-> IDatosPersona
+Paciente -[dashed]-> IClienteTurnos
+Medico -[dashed]-> IDatosPersona
+Medico -[dashed]-> IProfesionalAgenda
+Secretaria -[dashed]-> IDatosPersona
+Secretaria -[dashed]-> IGestorTurnos
+Turno -[dashed]-> ITurnoDatos
+Turno -[dashed]-> ICicloVidaTurno
+Agenda -[dashed]-> IGestorTurnos
+Agenda -[dashed]-> IGestorDisponibilidad
+Disponibilidad -[dashed]-> IGestorDisponibilidad
+Notificacion -[dashed]-> INotificador
+Agenda *- Turno
+Turno -- Paciente
+Turno -- Medico
+@enduml
