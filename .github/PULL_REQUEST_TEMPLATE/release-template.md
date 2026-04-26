@@ -1,4 +1,4 @@
-# 📦 [GRUPO N°8][Actividad Obligatoria N°1] Entrega Final - Release a master
+# 📦 [GRUPO N°5][Actividad Obligatoria N°1] Entrega Final - Release a master
 
 
 ---
@@ -32,13 +32,13 @@ Esta Pull Request representa la **entrega final de la Actividad Obligatoria N°1
 
 ## 📋 Checklist de revisión antes de merge
 
-- [ ] Todas las ramas `feature/*` fueron mergeadas en `develop`.
-- [ ] Se resolvieron todos los conflictos.
-- [ ] La estructura de carpetas y archivos sigue el formato solicitado.
-- [ ] Se completó correctamente el archivo `changelog.md`.
-- [ ] Se revisaron los comentarios de revisión en cada PR individual.
-- [ ] Esta Pull Request se realiza desde `release/actividad-obligatoria-1` hacia `master`.
-- [ ] Se notificó en el canal de Slack con el formato correcto.
+- [X] Todas las ramas `feature/*` fueron mergeadas en `develop`.
+- [X] Se resolvieron todos los conflictos.
+- [X] La estructura de carpetas y archivos sigue el formato solicitado.
+- [X] Se completó correctamente el archivo `changelog.md`.
+- [X] Se revisaron los comentarios de revisión en cada PR individual.
+- [X] Esta Pull Request se realiza desde `release/actividad-obligatoria-1` hacia `master`.
+- [X] Se notificó en el canal de Slack con el formato correcto.
 
 ---
 

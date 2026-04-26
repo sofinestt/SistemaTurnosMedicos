@@ -1,6 +1,6 @@
 | **Nombre del escenario:** | Flujo principal - Registro de paciente exitoso | | | |
 |---|---|---|---|---|
-| **Nombre del caso de uso:** | Registro de Paciente | | **ID Única:** | 01 |
+| **Nombre del caso de uso:** | Registro de Paciente | | **ID Única:** | CU-01 |
 | **Área** | Sistema de Turnos Médicos - Gestión de Pacientes | | | |
 | **Actor(es):** | Secretaria, Médico | | | |
 | **Descripción:** | Permite registrar un nuevo paciente en el sistema ingresando sus datos personales y de contacto. | | | |

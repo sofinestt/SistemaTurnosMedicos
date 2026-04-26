@@ -1,0 +1,24 @@
+@startuml
+
+actor Paciente
+actor Secretaria
+rectangle "Sistema de Turnos Médicos" {
+  usecase "Visualizar turnos disponibles" as UC1
+  usecase "Agendar turno" as UC2
+  usecase "Cancelar turno" as UC3
+  usecase "Validar disponibilidad" as UC4
+  usecase "Notificar cancelación" as UC5
+
+  Paciente --> (UC1)
+  Secretaria --> (UC2)
+  Secretaria --> (UC3)
+
+  (UC2) --> (UC4) : <<include>>
+  (UC2) --> (UC1) : <<extend>>
+
+  (UC3) --> (UC5) : <<include>>
+
+}
+@enduml
+
+' RC: Se recomienda separar los casos de uso "Visualizar turnos disponibles", "Agendar turno" y "Cancelar turno" en diagramas independientes para mayor claridad y agregar el actor Secretaria como actor principal en "Cancelar turno".

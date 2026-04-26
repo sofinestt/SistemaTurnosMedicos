@@ -1,31 +1,7 @@
 # Diagramas de Casos de Uso
 
-Estos documentos contienen los diagramas de casos de uso del sistema de turnos médicos.
-
-## Índice
-
-- **Caso de uso Paciente**  
-  Actor: Paciente  
-  [Ver diagrama](./01-caso-uso-paciente.png.png)  
-  [Ver código PlantUML](./01-caso-uso-paciente.puml)
-
-- **Caso de uso Secretaria**  
-  Actor: Paciente  
-  [Ver diagrama](./02-caso-uso-secretaria.png)  
-  [Ver código PlantUML](./02-caso-uso-secretaria.puml)
-
-- **Caso de uso notificaciones**  
-  Actor: Paciente  
-  [Ver diagrama](./03-caso-uso-notificaciones.png)  
-  [Ver código PlantUML](./03-caso-uso-notificaciones.puml)
-
-- **Caso de uso historial**  
-  Actor: Secretaria  
-  [Ver diagrama](./04-caso-uso-historial.png)  
-  [Ver código PlantUML](./04-caso-uso-historial.puml)
-
-- **Caso de uso horarios**  
-  Actor: Médico  
-  [Ver diagrama](./05-caso-uso-horarios.png)  
-  [Ver código PlantUML](./05-caso-uso-horarios.puml)
-
+- [CU-01 - Cancelar Turno](01-caso-uso-cancelar-turno.png)
+- [CU-02 - Agendar Turno](02-caso-uso-agendar-turno.png)
+- [CU-03 - Reprogramar Turno](03-caso-uso-reprogramar-turno.puml)
+- [CU-04 - Consultar Historial](04-caso-uso-consultar-historial.png)
+- [CU-05 - Gestionar Disponibilidad](05-caso-uso-gestionar-disponibilidad.png)

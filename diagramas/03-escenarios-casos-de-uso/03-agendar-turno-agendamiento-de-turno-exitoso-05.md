@@ -1,6 +1,6 @@
 | **Nombre del escenario:** | Flujo principal - Agendamiento de turno | | | |
 |---|---|---|---|---|
-| **Nombre del caso de uso:** | Agendar Turno | | **ID Única:** | 05 |
+| **Nombre del caso de uso:** | Agendar Turno | | **ID Única:** | CU-05 |
 | **Área** | Sistema de Turnos Médicos - Gestión de Agenda | | | |
 | **Actor(es):** | Secretaria, Médico | | | |
 | **Descripción:** | Permite registrar un turno en la agenda de un profesional, asignando un paciente a un horario disponible. | | | |
