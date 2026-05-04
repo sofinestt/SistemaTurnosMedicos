@@ -6,9 +6,9 @@ Los principios SOLID son un conjunto de cinco reglas fundamentales de diseño co
 
 ### Los 5 principios:
 
-SRP (Single Responsibility Principle): cada clase debe tener una única razón para cambiar. [Responsabilidad Única (SRP)]
-OCP (Open/Closed Principle): las clases deben estar abiertas para extensión, pero cerradas para modificación. [Abierto/Cerrado (OCP)]
-LSP (Liskov Substitution Principle): las subclases deben poder sustituir a sus clases base sin alterar el comportamiento del sistema. [Sustitución de Liskov (LSP)]
+SRP (Single Responsibility Principle): cada clase debe tener una única razón para cambiar. [Responsabilidad Única (SRP)](./01-srp.md)
+OCP (Open/Closed Principle): las clases deben estar abiertas para extensión, pero cerradas para modificación. [Abierto/Cerrado (OCP)](./02-ocp.md)
+LSP (Liskov Substitution Principle): las subclases deben poder sustituir a sus clases base sin alterar el comportamiento del sistema. [Sustitución de Liskov (LSP)](./03-lsp.md)
 ISP (Interface Segregation Principle): es mejor tener varias interfaces específicas que una sola interfaz general con métodos innecesarios. [Segregación de Interfaces (ISP)](04-isp.md)
 DIP (Dependency Inversion Principle): los módulos de alto nivel no deben depender de módulos de bajo nivel, sino de abstracciones. [Inversión de Dependencias (DIP)](./05-dip.md)
 
