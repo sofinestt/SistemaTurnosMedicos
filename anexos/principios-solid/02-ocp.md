@@ -1,4 +1,4 @@
-# Principios Abierto/Cerrado (OCP)
+# Principio Abierto/Cerrado (OCP)
 
 ## Propósito y Tipo del principio SOLID
 El principio de Abierto/Cerrado (OCP) implica que el comportamiento de un módulo puede ser extendido para satisfacer nuevos requerimientos sin necesidad de alterar su código fuente original.
