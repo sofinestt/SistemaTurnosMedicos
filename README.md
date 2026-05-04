@@ -19,10 +19,10 @@ El proyecto utiliza metodologías ágiles de diseño como **Tarjetas CRC** (Clas
 
 | Nombre y Apellido | Matrícula | Usuario de GitHub | Rol pp|
 |:-----| -----: | ------: | :----: | 
-| Milenka Athina Vila | 157550 | @eternalnight04 |especialista de segregación de interfaces(ISP) |
-| Lautaro Chávez |151222 | @Lautarochavez14 |especialista en principios de extensión (ocp+ lsp) |
-| Alexis Matias Britez Acosta  | 158100| @britezacostaalexis-pixel |documentador y coordinador de repositorio(SRP) |
-|?   | ?    |    ?   |    ?    |
+| Milenka Athina Vila | 157550 | @eternalnight04 |Especialista de Segregación de Interfaces(ISP) |
+| Lautaro Chávez |151222 | @Lautarochavez14 |Especialista en Principios de Extensión (ocp+ lsp) |
+| Alexis Matias Britez Acosta  | 158100| @britezacostaalexis-pixel |Documentador y Coordinador de Repositorio(SRP) |
+| Milenka Athina Vila | 157550    |   @eternalnight04  |   Especialista en Inversión de Dependencias(DIP)   |
 
 ---
 
