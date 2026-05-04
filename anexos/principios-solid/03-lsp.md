@@ -1,228 +1,39 @@
 # Principio de Sustitución de Liskov (LSP)
 
-## Propósito y Tipo del principio SOLID
+## Propósito y Tipo del Principio SOLID
 
-El principio de sustitución de Liskov (LSP) establece que los objetos de una superclase deben poder ser reemplazados por objetos de sus subclases sin alterar el funcionamiento correcto del programa.
-
-En otras palabras: si S es una subclase de T, entonces los objetos de tipo T deberían poder ser reemplazados por objetos de tipo S sin modificar las propiedades correctas del programa.
+El Principio de Sustitución de Liskov (LSP) es uno de los cinco principios SOLID en el diseño orientado a objetos. Establece que los objetos de una superclase deben poder ser reemplazados por objetos de sus subclases sin alterar el funcionamiento correcto del programa. En otras palabras, si S es una subclase de T, entonces los objetos de tipo T deberían poder ser reemplazados por objetos de tipo S sin modificar las propiedades correctas del programa. Este principio ayuda a prevenir violaciones sutiles en las jerarquías de herencia que pueden llevar a comportamientos inesperados y errores difíciles de detectar.
 
 ## Motivación
-En el diseño orientado a objetos, las jerarquías de herencia pueden parecer correctas a simple vista, pero pueden ocultar violaciones sutiles del contrato entre clases. LSP nos ayuda a detectar.
 
-El problema en el sistema de turnos:
+En el diseño orientado a objetos, las jerarquías de herencia pueden parecer correctas a simple vista, pero pueden ocultar violaciones del contrato entre clases. LSP nos ayuda a detectar estas violaciones asegurando que las subclases mantengan el comportamiento esperado de sus superclases.
 
-Imaginemos que tenemos una jerarquía `Persona` → `Paciente, Medico, Secretaria`. Ésta herencia desde el punto de vista de LSP, tiene un problema, la clase `Secretaria` no agrega ninguna propiedad nueva. Hereda exactamente las mismas que `Persona`.
+En el sistema de turnos médicos, un ejemplo claro de la necesidad de aplicar LSP se encuentra en la jerarquía de clases Persona. Consideremos la jerarquía Persona → Paciente, Medico, Secretaria. La clase Secretaria hereda de Persona pero no agrega propiedades nuevas, solo hereda los datos básicos (nombre, apellido, telefono, mail). Esto plantea un problema: si el código cliente espera que las subclases de Persona tengan comportamientos distintivos o propiedades adicionales, la sustitución de Persona por Secretaria podría no funcionar como esperado, violando LSP.
 
-Veamos las propiedades de cada clase:
+Por ejemplo, si tenemos un método que procesa roles basándose en el tipo de subclase, como autorizar sobreturnos para Médicos, el uso de polimorfismo se rompe si dependemos de instanceof, lo que indica una violación de LSP.
 
-| Clase | Propiedades |
-|-------|-------------|
-| Persona | nombre, apellido, telefono, mail |
-| Paciente | dni, fechaNacimiento, telefono, mail |
-| Medico | especialidad, matricula, telefono, mail |
-| Secretaria | (sin propiedades adicionales) |
+## Explicación de Herencia
 
-**Problema detectado:**  ¿Es esto una violación de LSP?
+La herencia en programación orientada a objetos es un mecanismo que permite a una clase (subclase) heredar propiedades y métodos de otra clase (superclase), promoviendo la reutilización de código y la creación de jerarquías. Para cumplir con LSP, la herencia debe usarse de manera que las subclases puedan sustituir a sus superclases sin alterar el comportamiento esperado. Esto significa que las subclases deben respetar el contrato de la superclase, incluyendo precondiciones, postcondiciones y invariantes.
 
----
+En el diseño de jerarquías del sistema de turnos, la herencia se aplica para modelar relaciones "es-un" válidas. Por ejemplo, un Paciente "es una" Persona, por lo que hereda los datos personales y agrega comportamientos específicos como pedirTurno(). Sin embargo, si una subclase como Secretaria no extiende el comportamiento de manera significativa, podría indicar que la herencia no es apropiada y que se debería considerar composición en su lugar.
 
-## Análisis de jerarquías
+## Estructura de Clases
 
-### Jerarquía 1: Persona → Paciente, Medico, Secretaria
+A continuación, se presenta un diagrama UML que ilustra la jerarquía de clases Persona y sus subclases, destacando cómo las subclases pueden (o no) sustituir a la superclase sin alterar el comportamiento esperado.
 
-- **Evaluación de sustitución:**
-  La relación "es-un" entre Persona y sus subclases es conceptualmente válida: un Paciente "es una" Persona, un Médico "es una" Persona, una Secretaria "es una" Persona. Sin embargo, hay matices que evaluar.
+![Diagrama LSP](diagramas/01-diagrama-clases/01-solid-03-lsp.png)
 
-- **Contrato esperado:**
-  Una Persona debe tener: nombre, apellido, teléfono y mail. Las subclases heredan estos datos y pueden agregar los propios.
+El diagrama PlantUML correspondiente se encuentra en [diagramas/01-diagrama-clases/01-solid-03-lsp.puml](diagramas/01-diagrama-clases/01-solid-03-lsp.puml).
 
-- **Riesgos o violaciones detectadas:**
-  1. **Secretaria como "falso subtipo"**: La clase Secretaria no agrega propiedades adicionales. Solo hereda los datos de Persona. Si el sistema solo necesita los datos básicos de persona, la herencia funciona. Pero si hay código que espera que cada subclase tenga comportamiento distintivo, podría haber una sorpresa.
+## Justificación Técnica
 
-  2. **Propiedades duplicadas en Paciente y Medico**: Ambos tienen telefono y mail en sus propiedades, además de los específicos (dni, fechaNacimiento para Paciente; especialidad, matricula para Medico). Esto indica que probablemente heredan de Persona, pero las tarjetas CRC muestran estos datos como propios, lo que podría causar confusión.
+El diagrama UML muestra la jerarquía Persona como superclase abstracta con atributos comunes (nombre, apellido, telefono, mail) y métodos getters. Las subclases Paciente, Medico y Secretaria heredan de Persona.
 
-  3. **Relación semántica cuestionable**: En el dominio del sistema de turnos, una Secretaria no es simplemente "una persona con datos". Es un **rol operativo** que realiza acciones específicas (gestionar agenda, notificar pacientes). La herencia por datos no captura esta semántica de rol.
+- **Paciente**: Agrega atributos específicos (dni, fechaNacimiento) y métodos como pedirTurno() y cancelarTurno(). Cumple con LSP porque extiende el contrato de Persona con comportamiento adicional sin alterar el esperado.
 
-- **Ejemplo de ruptura de comportamiento (si aplica):**
-  ```java
-  // Código cliente que espera una Persona
-  void saludarPersona(Persona p) {
-      System.out.println("Hola, " + p.getNombre());
-  }
-  
-  // Llamada con diferentes subtipos
-  saludarPersona(new Paciente()); // ✅ Funciona
-  saludarPersona(new Medico());   // ✅ Funciona
-  saludarPersona(new Secretaria()); // ✅ Funciona
-  
-  // Pero si el código hace:
-  void procesarRol(Persona p) {
-      if (p instanceof Medico) {
-          ((Medico)p).autorizarSobreturno();
-      }
-      // ...
-  }
-  ```
-  Este código viola LSP porque depende del tipo concreto en lugar de usar polimorfismo.
+- **Medico**: Agrega especialidad, matricula y métodos como consultarAgenda() y autorizarSobreturno(). También cumple LSP al mantener la sustituibilidad.
 
-- **Rediseño recomendado:**
-  1. **Opción A - Mantener la jerarquía**: Si la relación semántica "es-un" tiene sentido en el dominio, mantenerla. Pero documentar que Secretaria es un rol, no una entidad con estado propio.
+- **Secretaria**: No agrega atributos nuevos, solo métodos operativos como gestionarTurnos(). Esto representa un problema LSP porque es un "falso subtipo": hereda datos pero no extiende significativamente el contrato. En el dominio, Secretaria es un rol operativo, no una entidad con estado propio, lo que sugiere usar composición en lugar de herencia.
 
-  2. **Opción B - Usar composición en lugar de herencia**: Si la Secretaria es solo un rol que opera sobre la Agenda, podría modelarse como:
-     ```java
-     class Agenda {
-         private Secretaria secretaria; // Composición
-         // ...
-     }
-     ```
-
-  3. **Opción C - Separar conceptos**: Si los datos son los mismos pero el comportamiento es diferente, considerar si la herencia es la mejor opción.
-
----
-
-### Jerarquía 2: TipoConsulta → Control, PrimeraVez (propuesta OCP)
-
-- **Evaluación de sustitución:**
-  Esta es una jerarquía propuesta en la introducción para resolver el problema OCP de duración de consultas. Analicemos si cumple con LSP.
-
-- **Contrato esperado:**
-  - `getDuracionPrevista()`: retorna la duración en minutos
-  - `getDescripcion()`: retorna el nombre del tipo de consulta
-
-- **Riesgos o violaciones detectadas:**
-  ✅ **Sin violaciones detectadas**. La jerarquía cumple con LSP:
-  - Cada subclase implementa completamente el contrato de la superclase
-  - No hay precondiciones más fuertes
-  - No hay postcondiciones debilitadas
-  - No se cambia el comportamiento esperado
-  - La relación "es-un" es válida: un Control "es una" consulta, una PrimeraVez "es una" consulta
-
-- **Ejemplo de ruptura de comportamiento (si aplica):**
-  No hay ruptura. El código cliente puede usar cualquier subclase indistintamente:
-  ```java
-  // Código cliente
-  int duracion = turno.getTipoConsulta().getDuracionPrevista();
-  
-  // Funciona con cualquier subtipo
-  turno.setTipoConsulta(new Control());      // → 15 min
-  turno.setTipoConsulta(new PrimeraVez());   // → 30 min
-  ```
-
-- **Rediseño recomendado:**
-  ✅ **No es necesario redesignar**. La jerarquía está bien modelada.
-
----
-
-### Jerarquía 3: EstadoTurno (propuesta OCP - análisis teórico)
-
-- **Evaluación de sustitución:**
-  Si implementamos una jerarquía EstadoTurno para resolver el problema OCP de estados de turno, debemos verificar que cumpla con LSP.
-
-- **Contrato esperado:**
-  - `puedeReprogramar()`: retorna boolean
-  - `puedeCancelar()`: retorna boolean
-  - `puedeConfirmar()`: retorna boolean
-
-- **Riesgos o violaciones detectadas:**
-  ⚠️ **Riesgo potencial**: Si una subclase lanza excepción en lugar de retornar boolean, rompe el contrato:
-  ```java
-  // ❌ Violación LSP
-  class Cancelado extends EstadoTurno {
-      boolean puedeReprogramar() {
-          throw new OperacionNoPermitidaException(); // ⚠️ Rompe el contrato
-      }
-  }
-  ```
-
-- **Ejemplo de ruptura de comportamiento (si aplica):**
-  ```java
-  // Código cliente
-  if (estado.puedeReprogramar()) { // Espera boolean
-      turno.reprogramar();
-  }
-  
-  // Si Cancelado lanza excepción, el flujo se interrumpe
-  ```
-
-- **Rediseño recomendado:**
-  Usar retornos booleanos, no excepciones, para consultas de capacidad:
-  ```java
-  // ✅ Cumple LSP
-  class Cancelado extends EstadoTurno {
-      boolean puedeReprogramar() {
-          return false; // Retorna boolean, no lanza excepción
-      }
-  }
-  ```
-
----
-
-## Falsos positivos / Jerarquías válidas
-
-### TipoConsulta → Control, PrimeraVez
-
-- **Detección:** La introducción propone esta jerarquía para resolver OCP.
-
-- **Por qué es válida:**
-  - La relación "es-un" es semánticamente correcta
-  - Cada subclase implementa completamente el contrato
-  - No hay precondiciones más fuertes
-  - No hay postcondiciones debilitadas
-  - El comportamiento es predecible y consistente
-
-- **Veredicto:** ✅ **Jerarquía válida**. No hay violación LSP.
-
----
-
-### Herencia de datos compartidos (Persona)
-
-- **Detección:** La jerarquía Persona → Paciente/Medico/Secretaria comparte datos.
-
-- **Por qué puede ser válida:**
-  - Si el dominio justifica que todos son "personas" en el contexto del consultorio
-  - Si hay operaciones que trabajan con la abstracción Persona
-  - Si no hay comportamiento que varíe polimórficamente
-
-- **Veredicto:** ⚠️ **Depende del contexto**. Puede ser válida si la semántica del dominio lo justifica. La Secretaria podría ser un caso borderline.
-
----
-
-## Revisión crítica final
-
-### Riesgos en las jerarquías actuales:
-
-| Jerarquía | Riesgo | Nivel |
-|-----------|--------|-------|
-| Persona → Secretaria | Falso subtipo | Medio |
-| Persona → Paciente/Medico | Propiedades duplicadas en tarjetas | Bajo |
-| TipoConsulta → Control/PrimeraVez | Sin riesgos | ✅ |
-| EstadoTurno (propuesta) | Excepciones en lugar de booleanos | Medio |
-
-
-### Observaciones de modelado de dominio:
-
-1. **La herencia no siempre es la mejor opción**: En el caso de Secretaria, podría ser más apropiado modelarla como un rol o composición, no como una subclase de Persona.
-
-2. **El comportamiento importa más que los datos**: La herencia basada solo en datos compartidos puede ser una señal de alerta. La herencia debería usarse cuando hay comportamiento que compartir o especializar.
-
-3. **LSP complementa OCP**: Las jerarquías propuestas para resolver OCP (como TipoConsulta) deben verificarse también contra LSP. Una solución OCP que viola LSP no es una buena solución.
-
----
-
-## Conclusión
-
-El análisis LSP del sistema de turnos médicos revela:
-
-1. **1 jerarquía potencialmente problemática**: Persona → Secretaria (posible falso subtipo)
-
-2. **1 jerarquía válida**: TipoConsulta → Control, PrimeraVez (cumple LSP)
-
-3. **1 propuesta de riesgo**: EstadoTurno (si se implementa con excepciones)
-
-### Recomendación general:
-
-- Mantener la jerarquía TipoConsulta (está bien diseñada)
-- Evaluar la jerarquía Persona → Secretaria (puede ser composición en lugar de herencia)
-- Documentar el comportamiento de EstadoTurno si se implementa (usar booleanos, no excepciones)
-
-La clave es priorizar la semántica del dominio sobre la pureza teórica. Si la herencia tiene sentido en el contexto del negocio, usarla. Si no, preferir composición o roles.
+La solución propuesta es correcta técnicamente porque identifica la violación y recomienda composición para Secretaria, preservando LSP al evitar herencias inválidas. Las clases Paciente y Medico demuestran sustitución válida, mientras que Secretaria ilustra el riesgo de herencia inapropiada. Esto asegura que el código cliente pueda usar objetos de subclases indistintamente sin sorpresas, manteniendo la robustez del sistema.
