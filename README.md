@@ -20,16 +20,22 @@ El proyecto utiliza metodologías ágiles de diseño como **Tarjetas CRC** (Clas
 | Nombre y Apellido | Matrícula | Usuario de GitHub | Rol pp|
 |:-----| -----: | ------: | :----: | 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8842bd1 (fix(rc13): correcciones en README.md (columna Rol PP, link SOLID y tabla de integrantes))
 | Milenka Athina Vila | 157550 | @eternalnight04 |Especialista de Segregación de Interfaces(ISP) |
 | Lautaro Chávez |151222 | @Lautarochavez14 |Especialista en Principios de Extensión (ocp+ lsp) |
 | Alexis Matias Britez Acosta  | 158100| @britezacostaalexis-pixel |Documentador y Coordinador de Repositorio(SRP) |
 | Milenka Athina Vila | 157550    |   @eternalnight04  |   Especialista en Inversión de Dependencias(DIP)   |
+<<<<<<< HEAD
 =======
 | Milenka Athina Vila | 157550 | @eternalnight04 |especialista de segregación de interfaces(ISP) |
 | Lautaro Chávez |151222 | @Lautarochavez14 |especialista en principios de extensión (ocp+ lsp) |
 | Alexis Matias Britez Acosta  | 158100| @britezacostaalexis-pixel |documentador y coordinador de repositorio(SRP) |
 |?   | ?    |    ?   |    ?    |
 >>>>>>> ebbf5e4 (fix(rc13): agregada columna Rol Primer Parcial en tabla de integrantes)
+=======
+>>>>>>> 8842bd1 (fix(rc13): correcciones en README.md (columna Rol PP, link SOLID y tabla de integrantes))
 
 ---
 
