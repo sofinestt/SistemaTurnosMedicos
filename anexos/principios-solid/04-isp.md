@@ -100,7 +100,7 @@ Cada interfaz representa un comportamiento real del dominio:
 ### Diagrama UML de Interfaces Segregadas
 
 
-![Diagrama UML de ISP](../../diagramas/01-diagrama-clases/01-solid-04-isp.puml)
+![Diagrama UML - ISP](diagramas\01-diagrama-clases\01-solid-04-isp.png)
 
 ---
 
