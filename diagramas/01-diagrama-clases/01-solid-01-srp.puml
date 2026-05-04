@@ -72,7 +72,10 @@ Secretaria --> AgendaOperator
 Secretaria --> PatientNotifier
 Secretaria --> ChangeLogger
 
+AgendaManager --> Agenda
+AgendaOperator --> Agenda
+AgendaViewer --> Agenda
+
 Agenda --> TurnoRepository
 Agenda --> ConflictDetector
-Agenda --> AgendaViewer
 @enduml

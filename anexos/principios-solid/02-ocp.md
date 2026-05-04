@@ -62,7 +62,7 @@ TipoConsulta <-- Sobreturno
 
 @enduml
 ```
-![Imagen](/diagramas/01-diagrama-clases/diagrama-ocp-turno.png)
+![Imagen](diagramas\01-diagrama-clases\01-solid-02-ocp.png)
 
 ## Justificación técnica
 
