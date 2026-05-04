@@ -19,9 +19,9 @@ En el Sistema de Turnos se aplica en dos casos principales:
 - `tipoConsulta`(superclase abstracta)
 - `Control`,`PrimeraVez`,`Sobreturno`(subclases)
 
-- 2.Disponibilidad
-- `Agenda`(superclase abstracta)
-- `medico`,`secretaria`(subclases)
+- 2 Disponibilidad
+  - `ReglaDisponibilidad` (superclase abstracta)
+  - `DisponibilidadMedico`, `DisponibilidadSecretaria` (subclases)
 
 
 
