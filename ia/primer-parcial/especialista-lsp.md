@@ -87,12 +87,58 @@ Criterios:
 
 ```
 
+# Especialista en Principio de Sustitución de Liskov (LSP)
+
 ## Resultados obtenidos
 
-## Ajustes Realizados
+Se utilizó GitHub Copilot en modo agente para analizar la estructura de clases del sistema de turnos médicos, particularmente las relacionadas con la gestión de turnos y profesionales.
+
+Prompt utilizado:
+"Analiza las clases del sistema y detecta posibles violaciones al principio de sustitución de Liskov (LSP). Indica si alguna subclase altera el comportamiento esperado de la clase base."
+
+Respuesta obtenida (resumida):
+Copilot detectó que ciertas clases que implementaban o extendían comportamientos relacionados a la gestión de turnos modificaban validaciones y resultados respecto a la clase base. Esto implicaba que una subclase no podía ser utilizada de forma transparente en lugar de su clase padre.
+
+También sugirió revisar la consistencia en los métodos sobrescritos y evitar cambios en precondiciones o postcondiciones.
+
+---
+
+## Ajustes realizados
+
+A partir del análisis, se realizaron los siguientes ajustes:
+
+- Se revisaron los métodos sobrescritos en clases derivadas para asegurar que mantengan el mismo contrato que la clase base.
+- Se evitaron cambios en validaciones que restringían más el comportamiento en las subclases.
+- Se unificaron criterios de validación para mantener coherencia entre clases.
+- Se reorganizó parte de la lógica para que las subclases no alteren el resultado esperado.
+
+Justificación:
+Estos cambios aseguran que cualquier instancia de una subclase pueda ser utilizada donde se espera la clase base sin generar errores o comportamientos inconsistentes, cumpliendo con el principio LSP.
+
+---
 
 ## Conclusión
 
+La aplicación del principio de sustitución de Liskov permitió mejorar la consistencia del diseño orientado a objetos del sistema.
+
+Se logró una estructura más predecible y mantenible, evitando comportamientos inesperados al utilizar polimorfismo.
+
+El uso de Copilot facilitó la detección de problemas en la jerarquía de clases y permitió realizar ajustes de forma más rápida y fundamentada.
+
+---
+
 ## Iteraciones
+
+Primera iteración:
+Se solicitó a Copilot un análisis general del sistema para detectar posibles violaciones al principio LSP. Se identificaron problemas en métodos sobrescritos.
+
+Segunda iteración:
+Se pidió a Copilot sugerencias de mejora. Se recomendó mantener contratos consistentes entre clases y evitar modificar validaciones.
+
+Tercera iteración:
+Se aplicaron los cambios sugeridos y se volvió a consultar a Copilot para validar el diseño. Se ajustaron detalles menores.
+
+Resultado final:
+El sistema quedó alineado con el principio de sustitución de Liskov, mejorando la robustez y la calidad del diseño.
 
 
