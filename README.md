@@ -17,12 +17,12 @@ El proyecto utiliza metodologías ágiles de diseño como **Tarjetas CRC** (Clas
 
 ## Integrantes
 
-| Nombre y Apellido | Matrícula | Usuario de GitHub | Rol |
+| Nombre y Apellido | Matrícula | Usuario de GitHub | Rol pp|
 |:-----| -----: | ------: | :----: | 
-| Alejo Neicuan | 159810 | @ANeicuan | Diseñador de tarjetas CRC |
-| Sofía Sol Nestmann| 160130 | @sofinestt | Modeladora de Casos de Uso |
-| Alejo Neicuan | 159810 | @ANeicuan | Especialista en Escenarios de casos de uso |
-| Sofía Sol Nestmann| 160130 | @sofinestt | Documentadora y Coordinadora del Repositorio |
+| Milenka Athina Vila | 157550 | @eternalnight04 |especialista de segregación de interfaces(ISP) |
+| Lautaro Chávez |151222 | @Lautarochavez14 |especialista en principios de extensión (ocp+ lsp) |
+| Alexis Matias Britez Acosta  | 158100| @britezacostaalexis-pixel |documentador y coordinador de repositorio(SRP) |
+|?   | ?    |    ?   |    ?    |
 
 ---
 
