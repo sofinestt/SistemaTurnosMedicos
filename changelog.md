@@ -12,7 +12,12 @@ Este archivo se actualiza con cada Pull Request para registrar avances y correcc
 
 - @sofinestt (Especialista en Inversion de Dependencias) — Se agregó documentación del uso de IA y aplicación del DIP, se actualizó el principio DIP y se modificó el diagrama de clases del módulo de notificaciones. PR [#56](https://github.com/sofinestt/SistemaTurnosMedicos/pull/56)
 
-- @sofinestt (Especialista en Segregacion de Interfaces) —  PR [#56](https://github.com/sofinestt/SistemaTurnosMedicos/pull/56)
+- @sofinestt (Especialista en Segregacion de Interfaces) — Se agregó documentación del uso de IA y ISP, se actualizó el principio de ISP y se modificó el diagrama de clases del módulo de notificaciones. PR [#56](https://github.com/sofinestt/SistemaTurnosMedicos/pull/56)
+
+### Fixed
+- [fix/correcciones-primer-parcial-2] Correcciones RC Primer Parcial: RC12, RC13, RC14, RC4b y RC16. PR: [#71](https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/71) - @britezacostaalexis-pixel
+
+
 
 - [feature/feature/esp-isp-add-anexo-isp1] Se agregó documentación del uso de IA y ISP, se actualizó el principio de ISP y se modificó el diagrama de clases del módulo de notificaciones. PR: [#64](https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/64) - @sofinestt (Especialista en Segregación de Interfaces)
 
@@ -84,3 +89,4 @@ Este archivo se actualiza con cada Pull Request para registrar avances y correcc
 - [#73](https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/73)
 - [#74](https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/74)
   
+
