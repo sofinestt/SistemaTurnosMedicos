@@ -28,6 +28,8 @@ Este archivo se actualiza con cada Pull Request para registrar avances y correcc
 
 
 
+
+
 ## [Release Actividad Obligatoria N°1] - 2026-04-14
 
 ### Added
@@ -64,4 +66,9 @@ Este archivo se actualiza con cada Pull Request para registrar avances y correcc
   PR: [#47](https://github.com/sofinestt/SistemaTurnosMedicos/pull/47) - @ANeicuan (Especialista de Casos de Uso)
 - [fix/changelog-pr] Correción de changelog con PRs.
   PR: [#48](https://github.com/sofinestt/SistemaTurnosMedicos/pull/48) - @ANeicuan (Especialista de Casos de Uso)
+
+ -Se hicieron las CR 11,17 y 18
+- [#72](https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/72) 
+- [#73](https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/73)
+- [#74](https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/74)
   
