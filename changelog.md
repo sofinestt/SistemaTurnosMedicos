@@ -13,6 +13,7 @@ Este archivo se actualiza con cada Pull Request para registrar avances y correcc
 - @sofinestt (Especialista en Inversion de Dependencias) — Se agregó documentación del uso de IA y aplicación del DIP, se actualizó el principio DIP y se modificó el diagrama de clases del módulo de notificaciones. PR: [#56](https://github.com/sofinestt/SistemaTurnosMedicos/pull/56)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - @sofinestt (Especialista en Segregacion de Interfaces) — Se agregó documentación del uso de IA y ISP, se actualizó el principio de ISP y se modificó el diagrama de clases del módulo de notificaciones. PR [#56](https://github.com/sofinestt/SistemaTurnosMedicos/pull/56)
 
 ### Fixed
@@ -23,12 +24,25 @@ Este archivo se actualiza con cada Pull Request para registrar avances y correcc
 -[fix/rc17-correcciones] correccion rc17.PR:[#73] (https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/73#issue-4380477561) - @lautarochavez14
 
 =======
+=======
+>>>>>>> 15df714 (docs: agregar entrada al changelog por correcciones RC Primer Parcial)
 - @sofinestt (Especialista en Segregacion de Interfaces) — Se agregó documentación del uso de IA y ISP, se actualizó el principio de ISP y se modificó el diagrama de clases del módulo de notificaciones. PR: [#56](https://github.com/sofinestt/SistemaTurnosMedicos/pull/56)
 
 - [feature/esp-extension-lsp-add-anexo-lsp] Especialista en Principios de Extensión - LSP. PR: [#62](https://github.com/sofinestt/SistemaTurnosMedicos/pull/62) — @ANeicuan (Especialista OCP+LSP)
 
 ### Fixed
+<<<<<<< HEAD
 >>>>>>> e88f7ef8b0ed1291821b1a5a113a9efd846a1624
+=======
+=======
+- @sofinestt (Especialista en Segregacion de Interfaces) — Se agregó documentación del uso de IA y ISP, se actualizó el principio de ISP y se modificó el diagrama de clases del módulo de notificaciones. PR [#56](https://github.com/sofinestt/SistemaTurnosMedicos/pull/56)
+
+### Fixed
+- [fix/correcciones-primer-parcial-2] Correcciones RC Primer Parcial: RC12, RC13, RC14, RC4b y RC16. PR: [#71](https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/71) - @britezacostaalexis-pixel
+
+
+>>>>>>> 44bc129 (docs: agregar entrada al changelog por correcciones RC Primer Parcial)
+>>>>>>> 15df714 (docs: agregar entrada al changelog por correcciones RC Primer Parcial)
 
 - [feature/feature/esp-isp-add-anexo-isp1] Se agregó documentación del uso de IA y ISP, se actualizó el principio de ISP y se modificó el diagrama de clases del módulo de notificaciones. PR: [#64](https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/64) - @sofinestt (Especialista en Segregación de Interfaces)
 
