@@ -17,6 +17,9 @@ Este archivo se actualiza con cada Pull Request para registrar avances y correcc
 ### Fixed
 - [fix/correcciones-primer-parcial-2] Correcciones RC Primer Parcial: RC12, RC13, RC14, RC4b y RC16. PR: [#71](https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/71) - @britezacostaalexis-pixel
 
+-[fix/primer-parcial-2]Correcciones RC primer parcial:RC1,RC2;RC4;RC4b,RC6 y RC8.PR:[#68] (https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/68) - @eternalnight04
+
+-[fix/rc17-correcciones] correccion rc17.PR:[#73] (https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/73#issue-4380477561) - @lautarochavez14
 
 
 - [feature/feature/esp-isp-add-anexo-isp1] Se agregó documentación del uso de IA y ISP, se actualizó el principio de ISP y se modificó el diagrama de clases del módulo de notificaciones. PR: [#64](https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/64) - @sofinestt (Especialista en Segregación de Interfaces)
