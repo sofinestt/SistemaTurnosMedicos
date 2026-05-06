@@ -18,7 +18,8 @@ El **Principio de Segregación de Interfaces (ISP)** establece que los clientes 
 
 ### El problema en el sistema de turnos médicos
 
-En el diseño inicial del sistema, las clases presentaban responsabilidades mezcladas que violaban el principio de responsabilidad única (SRP) y generaban interfaces "gordas":
+En el diseño inicial del sistema, las clases presentaban responsabilidades mezcladas que violaban el principio de responsabilidad única (SRP), lo que podría llegar a generar interfaces "gordas":
+
 
 | Clase | Problema |
 |-------|----------|
@@ -27,16 +28,18 @@ En el diseño inicial del sistema, las clases presentaban responsabilidades mezc
 | **Medico** | Consultaba agenda Y definía disponibilidad Y autorizaba sobreturnos (tres dominios distintos) |
 | **Secretaria** | Realizaba operaciones de agenda, notificaciones y gestión de pacientes |
 
+El problema con esto es que no resulta eficiente a la hora de actualizar, extender y mantener el programa. Se estarían incluyendo métodos en la superclase ``Persona`` que las subclases no iban a utilizar.
+
 ### Cómo ISP ayuda a resolverlo
 
-ISP propone segregar las interfaces grandes en otras más pequeñas y específicas:
+Para evitar estas interfaces "gordas", ISP propone segregar estas clases en interfaces más pequeñas y específicas:
 
 ```
 ANTES (Interface "gorda"):
 ────────────────────────────
 interface IPersona
 ├── getNombre()
-├── getApellito()
+├── getApellido()
 ├── getTelefono()
 ├── getMail()
 ├── pedirTurno()      ← No aplica a Secretaria

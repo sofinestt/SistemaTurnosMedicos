@@ -25,7 +25,7 @@ class Sobreturno{
     +duracionMinutos : int
     +permiteExtension : boolean = true
 }
-Turno o-- TipoConsulta
+Turno --o TipoConsulta
 TipoConsulta <-- Control
 TipoConsulta <-- PrimeraVez
 TipoConsulta <-- Sobreturno

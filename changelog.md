@@ -8,21 +8,37 @@ Este archivo se actualiza con cada Pull Request para registrar avances y correcc
 
 ### Added
 
-- @ANeicuan (Especialista en Principios de Extensión OCP) — Se agregan diagramas UML y PNG, principios SOLID (OCP) y documentación del uso de IA. PR [#58](https://github.com/sofinestt/SistemaTurnosMedicos/pull/58)
+- @ANeicuan (Especialista en Principios de Extensión OCP) — Se agregan diagramas UML y PNG, principios SOLID (OCP) y documentación del uso de IA. PR: [#58](https://github.com/sofinestt/SistemaTurnosMedicos/pull/58)
 
-- @sofinestt (Especialista en Inversion de Dependencias) — Se agregó documentación del uso de IA y aplicación del DIP, se actualizó el principio DIP y se modificó el diagrama de clases del módulo de notificaciones. PR [#56](https://github.com/sofinestt/SistemaTurnosMedicos/pull/56)
+- @sofinestt (Especialista en Inversion de Dependencias) — Se agregó documentación del uso de IA y aplicación del DIP, se actualizó el principio DIP y se modificó el diagrama de clases del módulo de notificaciones. PR: [#56](https://github.com/sofinestt/SistemaTurnosMedicos/pull/56)
 
-- @sofinestt (Especialista en Segregacion de Interfaces) — Se agregó documentación del uso de IA y ISP, se actualizó el principio de ISP y se modificó el diagrama de clases del módulo de notificaciones. PR [#56](https://github.com/sofinestt/SistemaTurnosMedicos/pull/56)
+- @sofinestt (Especialista en Segregacion de Interfaces) — Se agregó documentación del uso de IA y ISP, se actualizó el principio de ISP y se modificó el diagrama de clases del módulo de notificaciones. PR: [#56](https://github.com/sofinestt/SistemaTurnosMedicos/pull/56)
 
 ### Fixed
-- [fix/correcciones-primer-parcial-2] Correcciones RC Primer Parcial: RC12, RC13, RC14, RC4b y RC16. PR: [#71](https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/71) - @britezacostaalexis-pixel
-
--[fix/primer-parcial-2]Correcciones RC primer parcial:RC1,RC2;RC4;RC4b,RC6 y RC8.PR:[#68] (https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/68) - @eternalnight04
-
--[fix/rc17-correcciones] correccion rc17.PR:[#73] (https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/73#issue-4380477561) - @lautarochavez14
-
 
 - [feature/feature/esp-isp-add-anexo-isp1] Se agregó documentación del uso de IA y ISP, se actualizó el principio de ISP y se modificó el diagrama de clases del módulo de notificaciones. PR: [#64](https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/64) - @sofinestt (Especialista en Segregación de Interfaces)
+
+- [release/primer-parcial] Implementación de SRP. PR: [#67](https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/67) - @britezacostaalexis-pixel (Documentador y Coordinador de Repositorio)
+
+-[fix/primer-parcial-2] Correcciones RC primer parcial: RC1, RC2, RC4,RC4b, RC6 y RC8. PR: [#68](https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/68) - @eternalnight04 (Especialista en Segregación de Interfaces)
+
+- [fix/rc11-lsp-documentacion] Se completó especialista-lsp.md. PR: [#69](https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/69) - @lautarochavez14 (Especialista en Principios de Extensión)
+
+- [fix/rc11-lsp-documentacion] Se corrigió especialista-lsp.md y se completó documentador-coordinador.md. PR: [#70](https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/70) - @lautarochavez14 (Especialista en Principios de Extensión)
+
+- [fix/correcciones-primer-parcial-2] Correcciones RC Primer Parcial: RC12, RC13, RC14, RC4b y RC16. PR: [#71](https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/71) - @britezacostaalexis-pixel (Documentador y Coordinador de Repositorio)
+
+- [fix/rc18-correcciones] Correcciones RC18. PR: [#72](https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/72) - @lautarochavez14 (Especialista en Principios de Extensión)
+
+- [fix/rc17-correcciones] Correcciones RC17. PR: [#73](https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/73) - @lautarochavez14 (Especialista en Principios de Extensión)
+
+- [fix/rc11-lsp-documentacion] Correcciones RC11. PR: [#74](https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/74) - @lautarochavez14 (Especialista en Principios de Extensión)
+
+- [fix/primer-parcial-3] Correcciones de formato y escritura. PR: [#77](https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/77) - @eternalnight04 (Especialista en Segregación de Interfaces)
+
+- [lautarochavez14-patch-1] Actualización de changelog con correcciones. PR: [#76](https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/76) - @lautarochavez14 (Especialista en Principios de Extensión)
+
+
 
 ## [Release Actividad Obligatoria N°2] - 2026-04-20
 
@@ -38,13 +54,13 @@ Este archivo se actualiza con cada Pull Request para registrar avances y correcc
 
 - [fix/correcciones-actividad-obligatoria-2.0] Correcciones A2: LlegadaPaciente CRC, Turno, ia/a2. PR: [#42](https://github.com/sofinestt/SistemaTurnosMedicos/pull/42) - @sofinestt (Modeladora de Diagramas de CU)
 
-- [fix/diag-casos-de-uso-fix-2] Se corrigen archivos de diagramas de CUs, nombres en indice diagramas_de_casos_de_uso.md y contenido de diagramasUML.md. PR [#43](https://github.com/sofinestt/SistemaTurnosMedicos/pull/43) - @sofinestt (Modeladora de casos de uso)
+- [fix/diag-casos-de-uso-fix-2] Se corrigen archivos de diagramas de CUs, nombres en indice diagramas_de_casos_de_uso.md y contenido de diagramasUML.md. PR: [#43](https://github.com/sofinestt/SistemaTurnosMedicos/pull/43) - @sofinestt (Modeladora de casos de uso)
 
-- [fix/correcciones-act-2-fix] Se corrigieron Indices, Indices en tarjetas CRC y archivo README. PR[#46](https://github.com/sofinestt/SistemaTurnosMedicos/pull/46) - @sofinestt(Diseñadora y cordinadora del Repositorio)
+- [fix/correcciones-act-2-fix] Se corrigieron Indices, Indices en tarjetas CRC y archivo README. PR: [#46](https://github.com/sofinestt/SistemaTurnosMedicos/pull/46) - @sofinestt(Diseñadora y cordinadora del Repositorio)
 
-- [fix/correcciones-finales-fix] Se agrego archivo documentador-coordinador.md. Se hacen correciones a changelog.md. PR[#49](https://github.com/sofinestt/SistemaTurnosMedicos/pull/49) - @sofinestt (Diseñadora y cordinadora del Repositorio)
+- [fix/correcciones-finales-fix] Se agrego archivo documentador-coordinador.md. Se hacen correciones a changelog.md. PR: [#49](https://github.com/sofinestt/SistemaTurnosMedicos/pull/49) - @sofinestt (Diseñadora y cordinadora del Repositorio)
 
-- [fix/correcciones-fix] Se modifica changelog y se hacen correcciones en diagramas de CUs. PR[#50](https://github.com/sofinestt/SistemaTurnosMedicos/pull/50) - @sofinestt (Diseñadora y cordinadora del Repositorio)
+- [fix/correcciones-fix] Se modifica changelog y se hacen correcciones en diagramas de CUs. PR: [#50](https://github.com/sofinestt/SistemaTurnosMedicos/pull/50) - @sofinestt (Diseñadora y cordinadora del Repositorio)
 
 
 
@@ -80,16 +96,14 @@ Este archivo se actualiza con cada Pull Request para registrar avances y correcc
   PR: [#27](https://github.com/sofinestt/SistemaTurnosMedicos/pull/27) — @ANeicuan (Modelador de Casos de Uso)                                                                                                                                              
 - [fix/modelador-casos-de-uso-fix] Registro de PR #27 en changelog
   PR: [#28](https://github.com/sofinestt/SistemaTurnosMedicos/pull/28) - @sofinestt (Analista de Requerimientos)
+
 - [fix/escenarios-indice] Se corrige formato de escenarios de casos de uso.
   PR: [#45](https://github.com/sofinestt/SistemaTurnosMedicos/pull/45) - @ANeicuan (Especialista de Casos de Uso)
+
 - [fix-escenarios-casos-de-uso] Se corrige formato de escenarios_casos_de_uso.md y renombre de escenarios.
   PR: [#47](https://github.com/sofinestt/SistemaTurnosMedicos/pull/47) - @ANeicuan (Especialista de Casos de Uso)
+  
 - [fix/changelog-pr] Correción de changelog con PRs.
   PR: [#48](https://github.com/sofinestt/SistemaTurnosMedicos/pull/48) - @ANeicuan (Especialista de Casos de Uso)
-
- -Se hicieron las CR 11,17 y 18
-- [#72](https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/72) 
-- [#73](https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/73)
-- [#74](https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/74)
   
 
