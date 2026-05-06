@@ -14,6 +14,10 @@ La necesidad de aplicar LSP surge cuando queremos, por ejemplo, que la clase `Ag
 
 ## Explicación de Herencia
 
+Una relación de herencia refiere al cómo una clase se basa en otra para reutilizar comportamientos y atributos. Tal como la superclase `Persona` tiene como subclases a `Paciente`, `Medico` y `Secretaria`, dando a entender que estas heredan lo que está definido en `Persona`, pero cada una puede tener su propia información adicional.
+
+Podemos aplicar esto mediante la superclase `Persona` que tiene como subclases a `Medico`, `Paciente` y `Secretaria`. Estas subclases heredan los atributos y comportamientos de `Persona`, pero se agregan comportamientos adicionales para cada uno.
+
 ### Jerarquía propuesta: Persona → Paciente, Médico, Secretaria
 
 - **Superclase**: `Persona`
@@ -31,7 +35,11 @@ Las subclases heredan estos métodos y agregan atributos específicos:
 - `Medico`: matricula, especialidad
 - `Secretaria`: sector, legajo
 
-## Justificación Técnica usando clases reales del STM
+## Estructura de Clases
+
+![Diagrama UML - LSP](../../diagramas/01-diagrama-clases/01-solid-03-lsp.png)
+
+## Justificación Técnica
 
 La jerarquía cumple con LSP porque:
 
@@ -39,16 +47,3 @@ La jerarquía cumple con LSP porque:
 - Las subclases respetan el contrato de la superclase (no fortalecen precondiciones ni debilitan postcondiciones).
 - Permite que clases como `Agenda`, `Turno` y `LlegadaPaciente` trabajen con polimorfismo de forma segura.
 
-**Ejemplo real del proyecto:**
-```java
-// Ejemplo en LlegadaPaciente o Agenda
-public void procesarLlegada(Persona persona, Turno turno) {
-    persona.registrarLlegada();
-    turno.confirmarLlegada();
-    System.out.println("Llegada procesada para: " + persona.getNombreCompleto());
-}
-
-// Funciona con cualquier subtipo
-procesarLlegada(new Paciente(...), turnoActual);
-procesarLlegada(new Medico(...), turnoActual);
-procesarLlegada(new Secretaria(...), turnoActual);
