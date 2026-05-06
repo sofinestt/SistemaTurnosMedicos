@@ -14,29 +14,31 @@ Este archivo se actualiza con cada Pull Request para registrar avances y correcc
 
 - @sofinestt (Especialista en Segregacion de Interfaces) — Se agregó documentación del uso de IA y ISP, se actualizó el principio de ISP y se modificó el diagrama de clases del módulo de notificaciones. PR: [#56](https://github.com/sofinestt/SistemaTurnosMedicos/pull/56)
 
+- [feature/esp-extension-lsp-add-anexo-lsp] Especialista en Principios de Extensión - LSP. PR: [#62](https://github.com/sofinestt/SistemaTurnosMedicos/pull/62) — @ANeicuan (Especialista OCP+LSP)
+
 ### Fixed
 
 - [feature/feature/esp-isp-add-anexo-isp1] Se agregó documentación del uso de IA y ISP, se actualizó el principio de ISP y se modificó el diagrama de clases del módulo de notificaciones. PR: [#64](https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/64) - @sofinestt (Especialista en Segregación de Interfaces)
 
-- [release/primer-parcial] Implementación de SRP. PR: [#67](https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/67) - @britezacostaalexis-pixel (Documentador y Coordinador de Repositorio)
+- [release/primer-parcial] Implementación de SRP. PR: [#67](https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/67) - @britezacostaalexis-pixel (Documentador y Coordinador de Repositorio+Especialista SRP)
 
--[fix/primer-parcial-2] Correcciones RC primer parcial: RC1, RC2, RC4,RC4b, RC6 y RC8. PR: [#68](https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/68) - @eternalnight04 (Especialista en Segregación de Interfaces)
+- [fix/primer-parcial-2] Correcciones RC primer parcial: RC1, RC2, RC4, RC4b, RC6 y RC8. PR: [#68](https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/68) - @eternalnight04 (Especialista ISP+DIP)
 
-- [fix/rc11-lsp-documentacion] Se completó especialista-lsp.md. PR: [#69](https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/69) - @lautarochavez14 (Especialista en Principios de Extensión)
+- [fix/rc11-lsp-documentacion] Se completó especialista-lsp.md. PR: [#69](https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/69) - @lautarochavez14 (Especialista OCP+LSP)
 
-- [fix/rc11-lsp-documentacion] Se corrigió especialista-lsp.md y se completó documentador-coordinador.md. PR: [#70](https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/70) - @lautarochavez14 (Especialista en Principios de Extensión)
+- [fix/rc11-lsp-documentacion] Se corrigió especialista-lsp.md y se completó documentador-coordinador.md. PR: [#70](https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/70) - @lautarochavez14 (Especialista OCP+LSP)
 
-- [fix/correcciones-primer-parcial-2] Correcciones RC Primer Parcial: RC12, RC13, RC14, RC4b y RC16. PR: [#71](https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/71) - @britezacostaalexis-pixel (Documentador y Coordinador de Repositorio)
+- [fix/correcciones-primer-parcial-2] Correcciones RC Primer Parcial: RC12, RC13, RC14, RC4b y RC16. PR: [#71](https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/71) - @britezacostaalexis-pixel (Documentador y Coordinador de Repositorio+Especialista SRP)
 
-- [fix/rc18-correcciones] Correcciones RC18. PR: [#72](https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/72) - @lautarochavez14 (Especialista en Principios de Extensión)
+- [fix/rc18-correcciones] Correcciones RC18. PR: [#72](https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/72) - @lautarochavez14 (Especialista OCP+LSP)
 
-- [fix/rc17-correcciones] Correcciones RC17. PR: [#73](https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/73) - @lautarochavez14 (Especialista en Principios de Extensión)
+- [fix/rc17-correcciones] Correcciones RC17. PR: [#73](https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/73) - @lautarochavez14 (Especialista OCP+LSP)
 
-- [fix/rc11-lsp-documentacion] Correcciones RC11. PR: [#74](https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/74) - @lautarochavez14 (Especialista en Principios de Extensión)
+- [fix/rc11-lsp-documentacion] Correcciones RC11. PR: [#74](https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/74) - @lautarochavez14 (Especialista OCP+LSP)
 
-- [fix/primer-parcial-3] Correcciones de formato y escritura. PR: [#77](https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/77) - @eternalnight04 (Especialista en Segregación de Interfaces)
+- [fix/primer-parcial-3] Correcciones de formato y escritura. PR: [#77](https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/77) - @eternalnight04 (Especialista ISP+DIP)
 
-- [lautarochavez14-patch-1] Actualización de changelog con correcciones. PR: [#76](https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/76) - @lautarochavez14 (Especialista en Principios de Extensión)
+- [lautarochavez14-patch-1] Actualización de changelog con correcciones. PR: [#76](https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/76) - @lautarochavez14 (Especialista OCP+LSP)
 
 - [fix/especialista-srp-2] Se agrega archivo especialista-srp.md faltante. PR: [#82](https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/82) - @eternalnight04 (Especialista en Segregación de Interfaces)
 
