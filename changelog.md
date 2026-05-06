@@ -40,6 +40,14 @@ Este archivo se actualiza con cada Pull Request para registrar avances y correcc
 
 - [lautarochavez14-patch-1] Actualización de changelog con correcciones. PR: [#76](https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/76) - @lautarochavez14 (Especialista OCP+LSP)
 
+- [fix/primer-parcial-3] Corrección siguiendo los request changes en diferentes archivos. PR: [#77](https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/77) - @eternalnight04 (Especialista ISP+DIP)
+
+- [fix/correcciones-cambios] Corrección de links y reescritura de partes. PR: [#78](https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/78) - @eternalnight04 (Especialista ISP+DIP)
+
+- [fix/correcciones-parcial-2] Correcciones al archivo OCP y mínimos cambios en otros archivos md para una mejor lectura. Se volvió a agregar el archivo excalidraw borrado accidentalmente. PR: [#79](https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/79) - @eternalnight04 (Especialista ISP+DIP)
+
+
+
 
 
 ## [Release Actividad Obligatoria N°2] - 2026-04-20
