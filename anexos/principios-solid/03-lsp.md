@@ -14,9 +14,9 @@ La necesidad de aplicar LSP surge cuando queremos, por ejemplo, que la clase `Ag
 
 ## Explicación de Herencia
 
-Una relación de herencia refiere al cómo una clase se basa en otra para reutilizar comportamientos y atributos. Tal como la superclase `Persona` tiene como subclases a `Paciente`, `Medico` y `Secretaria`, dando a entender que estas heredan lo que está definido en `Persona`, pero cada una puede tener su propia información adicional.
+Una relación de herencia refiere al cómo una clase se basa en otra para reutilizar comportamientos y atributos. 
 
-Podemos aplicar esto mediante la superclase `Persona` que tiene como subclases a `Medico`, `Paciente` y `Secretaria`. Estas subclases heredan los atributos y comportamientos de `Persona`, pero se agregan comportamientos adicionales para cada uno.
+Podemos aplicar esto mediante la superclase `Persona` que tiene como subclases a `Medico`, `Paciente` y `Secretaria`. Estas subclases heredan los atributos y comportamientos de `Persona`, pero se agregan comportamientos adicionales para cada uno si así lo necesita.
 
 ### Jerarquía propuesta: Persona → Paciente, Médico, Secretaria
 
