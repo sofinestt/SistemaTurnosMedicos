@@ -1,0 +1,134 @@
+@startuml diagrama-isp-interfaces
+
+' ============================================
+' DIAGRAMA ISP: Interfaces segregadas en el sistema de turnos
+' ============================================
+
+    interface IDatosPersona {
+        +getNombre(): String
+        +getApellido(): String
+        +getTelefono(): String
+        +getMail(): String
+    }
+
+    interface IClienteTurnos {
+        +solicitarTurno(fecha: Date, hora: Hora): Turno
+        +cancelarTurno(turnoId: String): Resultado
+        +consultarMisTurnos(): Turno[]
+    }
+
+    interface IProfesionalAgenda {
+        +consultarAgenda(dia: Date): AgendaDia
+        +definirDisponibilidad(bloques: BloqueHorario[]): void
+        +autorizarSobreturno(turno: Turno, autorizacion: String): void
+    }
+
+    interface IGestorTurnos {
+        +agendarTurno(paciente: IClienteTurnos, fecha: Date, hora: Hora): Turno
+        +reprogramarTurno(turnoId: String, nuevaFecha: Date, nuevaHora: Hora): Turno
+        +cancelarTurno(turnoId: String, motivo: String): Resultado
+    }
+
+    interface IGestorDisponibilidad {
+        +estaDisponible(fecha: Date, hora: Hora): boolean
+        +obtenerBloquesLibres(dia: Date): Bloque[]
+        +bloquearPeriodo(inicio: Date, fin: Date, motivo: String): void
+    }
+
+    interface ITurnoDatos {
+        +getId(): String
+        +getFecha(): Date
+        +getHora(): Hora
+        +getEstado(): EstadoTurno
+        +getDuracionPrevista(): number
+        +esSobreturno(): boolean
+    }
+
+    interface ICicloVidaTurno {
+        +confirmar(): void
+        +completar(duracionReal: number): void
+        +cancelar(motivo: String): void
+    }
+
+    interface INotificador {
+        +enviarRecordatorio(turno: Turno): void
+        +enviarConfirmacion(turno: Turno): void
+        +enviarCancelacion(turno: Turno, motivo: String): void
+    }
+
+
+
+    class Paciente {
+        -dni: String
+        -fechaNacimiento: Date
+    }
+
+    class Medico {
+        -especialidad: String
+        -matricula: String
+    }
+
+    class Secretaria {
+        -telefono: String
+        -mail: String
+    }
+
+    class Agenda {
+        -listaTurnos: Turno[]
+        -profesional: Medico
+    }
+
+    class Disponibilidad {
+        -bloquesHorarios: BloqueHorario[]
+        -diasBloqueados: Date[]
+        -motivoBloqueo: String
+    }
+
+    class Turno {
+        -id: String
+        -fecha: Date
+        -hora: Hora
+        -estado: EstadoTurno
+        -duracionPrevista: number
+        -duracionReal: number
+        -esSobreturno: boolean
+    }
+
+    class Notificacion {
+        -tipo: TipoNotificacion
+        -canal: CanalNotificacion
+        -mensaje: String
+        -fechaEnvio: Date
+        -estado: EstadoNotificacion
+    }
+
+
+' Relaciones de implementación (clases implementan interfaces)
+Paciente ..|> IDatosPersona
+Paciente ..|> IClienteTurnos
+
+Medico ..|> IDatosPersona
+Medico ..|> IProfesionalAgenda
+
+Secretaria ..|> IDatosPersona
+Secretaria ..|> IGestorTurnos
+
+Agenda ..|> IGestorTurnos
+Agenda ..|> IGestorDisponibilidad
+
+Disponibilidad ..|> IGestorDisponibilidad
+
+Turno ..|> ITurnoDatos
+Turno ..|> ICicloVidaTurno
+
+Notificacion ..|> INotificador
+
+' Relaciones de composición y asociación
+Agenda *-- Turno : contiene
+Agenda --> Disponibilidad : gestiona
+Secretaria --> Agenda : opera
+Turno --> Paciente : asignado a
+Turno --> Medico : con
+
+
+@enduml
