@@ -38,6 +38,7 @@ Este archivo se actualiza con cada Pull Request para registrar avances y correcc
 
 - [lautarochavez14-patch-1] Actualización de changelog con correcciones. PR: [#76](https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/76) - @lautarochavez14 (Especialista en Principios de Extensión)
 
+- [fix/especialista-srp-2] Se agrega archivo especialista-srp.md faltante. PR: [#82](https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/82) - @eternalnight04 (Especialista en Segregación de Interfaces)
 
 
 ## [Release Actividad Obligatoria N°2] - 2026-04-20
