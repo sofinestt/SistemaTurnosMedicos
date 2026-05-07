@@ -25,9 +25,13 @@ class Sobreturno{
     +duracionMinutos : int
     +permiteExtension : boolean = true
 }
-Turno o-- TipoConsulta
-TipoConsulta <-- Control
-TipoConsulta <-- PrimeraVez
-TipoConsulta <-- Sobreturno
+
+
+Turno --o TipoConsulta
+
+
+class TipoConsulta extends Control, PrimeraVez, Sobreturno{
+
+}
 
 @enduml

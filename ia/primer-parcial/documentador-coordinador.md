@@ -10,7 +10,7 @@ Documentar los prompts utilizados en GitHub Copilot (modo agente) durante la cor
 
 ### Prompt 1: Análisis de LSP
 
-"Analiza las clases del sistema de turnos médicos y detecta posibles violaciones al principio de sustitución de Liskov (LSP). Indica si alguna subclase altera el comportamiento esperado de la clase base."
+```Analiza las clases del sistema de turnos médicos y detecta posibles violaciones al principio de sustitución de Liskov (LSP). Indica si alguna subclase altera el comportamiento esperado de la clase base.```
 
 Resultado:
 Copilot identificó posibles inconsistencias en métodos sobrescritos donde las subclases modificaban validaciones y resultados esperados.
@@ -19,7 +19,7 @@ Copilot identificó posibles inconsistencias en métodos sobrescritos donde las 
 
 ### Prompt 2: Mejora de diseño
 
-"Sugiere cambios para asegurar que las subclases puedan reemplazar correctamente a sus clases base sin generar comportamientos inesperados."
+```Sugiere cambios para asegurar que las subclases puedan reemplazar correctamente a sus clases base sin generar comportamientos inesperados.```
 
 Resultado:
 Se recomendó mantener contratos consistentes entre clases, evitando modificar precondiciones y postcondiciones.
@@ -28,7 +28,7 @@ Se recomendó mantener contratos consistentes entre clases, evitando modificar p
 
 ### Prompt 3: Validación de sobrescrituras
 
-"Revisa los métodos sobrescritos y verifica si respetan el comportamiento definido en la clase base."
+```Revisa los métodos sobrescritos y verifica si respetan el comportamiento definido en la clase base.```
 
 Resultado:
 Se detectaron métodos que alteraban la lógica original, recomendando unificar criterios de validación.
@@ -37,7 +37,7 @@ Se detectaron métodos que alteraban la lógica original, recomendando unificar 
 
 ### Prompt 4: Refactorización
 
-"Propone una refactorización para mejorar la aplicación del principio de sustitución de Liskov en el sistema."
+```Propone una refactorización para mejorar la aplicación del principio de sustitución de Liskov en el sistema.```
 
 Resultado:
 Copilot sugirió reorganizar la jerarquía de clases y evitar dependencias innecesarias entre subclases.
