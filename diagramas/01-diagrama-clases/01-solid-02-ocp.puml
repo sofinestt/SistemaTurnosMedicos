@@ -1,0 +1,37 @@
+@startuml diagrama-ocp-turno
+class Turno {
+    +estado : String
+    +tipoConsulta : String
+    +duracionReal: int
+    +duracionPrevista : int
+    +fecha : int
+    +hora : int
+    +nombre() : String
+}
+class TipoConsulta {
+    +duracionPrevista : int
+    +nombre : String
+    +tipoConsulta : String
+}
+class Control {
+    +duracionMinutos : int = 15
+    +permiteExtension : boolean = false
+}
+class PrimeraVez {
+    +duracionMinutos : int = 30
+    +permiteExtension : boolean = true
+}
+class Sobreturno{
+    +duracionMinutos : int
+    +permiteExtension : boolean = true
+}
+
+
+Turno --o TipoConsulta
+
+
+class TipoConsulta extends Control, PrimeraVez, Sobreturno{
+
+}
+
+@enduml

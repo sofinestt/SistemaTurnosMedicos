@@ -1,0 +1,81 @@
+@startuml SRP Refactorización
+package "Antes" {
+    class Medico {
+        +consultarAgenda()
+        +autorizarSobreturno()
+        +definirDisponibilidad()
+    }
+    class Secretaria {
+        +agendarTurno()
+        +reprogramarTurno()
+        +cancelarTurno()
+        +notificarPaciente()
+    }
+    class Agenda {
+        +mostrarAgendaDiaria()
+        +agregarTurno()
+        +verificarConflicto()
+    }
+}
+
+package "Después" {
+    class Medico {
+        -especialidad
+        -matricula
+    }
+    class AgendaManager {
+        +consultarAgenda()
+    }
+    class SobreturnoAuthorizer {
+        +autorizarSobreturno()
+    }
+    class DisponibilidadManager {
+        +definirDisponibilidad()
+    }
+    
+    class Secretaria {
+        -telefono
+        -mail
+    }
+    class AgendaOperator {
+        +agendarTurno()
+        +reprogramarTurno()
+        +cancelarTurno()
+    }
+    class PatientNotifier {
+        +notificarPaciente()
+    }
+    class ChangeLogger {
+        +registrarCambio()
+    }
+    
+    class Agenda {
+        -listaTurnos
+    }
+    class TurnoRepository {
+        +agregarTurno()
+        +eliminarTurno()
+    }
+    class ConflictDetector {
+        +verificarConflicto()
+    }
+    class AgendaViewer {
+        +mostrarAgendaDiaria()
+    }
+}
+
+Medico --> AgendaManager
+Medico --> SobreturnoAuthorizer
+Medico --> DisponibilidadManager
+
+Secretaria --> AgendaOperator
+Secretaria --> PatientNotifier
+Secretaria --> ChangeLogger
+
+AgendaManager --> Agenda
+AgendaOperator --> Agenda
+AgendaViewer --> Agenda
+
+Agenda --> TurnoRepository
+Agenda --> ConflictDetector
+@enduml
