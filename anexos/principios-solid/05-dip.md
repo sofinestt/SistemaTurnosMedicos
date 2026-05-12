@@ -1,6 +1,6 @@
 # Principio de Inversión de Dependencias (DIP)
 
-## Propósito del principio
+## Propósito y Tipo del Principio SOLID
 El Principio de Inversión de Dependencias establece que los módulos de alto nivel no deben depender de módulos de bajo nivel, sino de abstracciones.
 
 ## Motivación
@@ -41,7 +41,7 @@ Esto permite:
 
 Además, este enfoque cumple con el principio DIP al invertir la dependencia: las clases de alto nivel dependen de una abstracción y no de implementaciones concretas.
 
-## Inyección de dependencias
+### Inyección de dependencias
 
 Para aplicar el principio DIP, se utiliza inyección de dependencias.
 
@@ -51,8 +51,6 @@ De esta forma, se puede cambiar el canal de envío sin modificar la lógica inte
 
 Esto permite mayor flexibilidad y facilita el testing.
 
-## Decisiones de diseño
+### Decisiones de diseño
 
 Se descartaron algunas abstracciones propuestas, como interfaces para los roles (IPaciente, IMedico), ya que no aportan directamente a la inversión de dependencias.
-
-Se priorizó trabajar sobre componentes del sistema que 

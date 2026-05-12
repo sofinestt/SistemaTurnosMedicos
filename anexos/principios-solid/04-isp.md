@@ -1,7 +1,5 @@
 # Principio de Segregación de Interfaces (ISP)
 
----
-
 ## Propósito y Tipo del Principio SOLID
 
 El **Principio de Segregación de Interfaces (ISP)** establece que los clientes no deben verse forzados a depender de interfaces que no utilizan. En otras palabras, es preferible tener muchas interfaces específicas antes que una interfaz general con demasiados métodos.
@@ -16,13 +14,12 @@ El **Principio de Segregación de Interfaces (ISP)** establece que los clientes 
 - Se reduce el acoplamiento entre componentes
 - Facilita el mantenimiento y la evolución del sistema
 
----
-
 ## Motivación
 
 ### El problema en el sistema de turnos médicos
 
-En el diseño inicial del sistema, las clases presentaban responsabilidades mezcladas que violaban el principio de responsabilidad única (SRP) y generaban interfaces "gordas":
+En el diseño inicial del sistema, las clases presentaban responsabilidades mezcladas que violaban el principio de responsabilidad única (SRP), lo que podría llegar a generar interfaces "gordas":
+
 
 | Clase | Problema |
 |-------|----------|
@@ -31,16 +28,18 @@ En el diseño inicial del sistema, las clases presentaban responsabilidades mezc
 | **Medico** | Consultaba agenda Y definía disponibilidad Y autorizaba sobreturnos (tres dominios distintos) |
 | **Secretaria** | Realizaba operaciones de agenda, notificaciones y gestión de pacientes |
 
+El problema con esto es que no resulta eficiente a la hora de actualizar, extender y mantener el programa. Se estarían incluyendo métodos en la superclase ``Persona`` que las subclases no iban a utilizar.
+
 ### Cómo ISP ayuda a resolverlo
 
-ISP propone segregar las interfaces grandes en otras más pequeñas y específicas:
+Para evitar estas interfaces "gordas", ISP propone segregar estas clases en interfaces más pequeñas y específicas:
 
 ```
 ANTES (Interface "gorda"):
 ────────────────────────────
 interface IPersona
 ├── getNombre()
-├── getApellito()
+├── getApellido()
 ├── getTelefono()
 ├── getMail()
 ├── pedirTurno()      ← No aplica a Secretaria
@@ -71,7 +70,7 @@ Una **interfaz** es un contrato que define un conjunto de métodos que una clase
 
 ### Aplicación de ISP en el sistema de turnos médicos
 
-El sistema implementa las siguientes interfaces segregadas:
+Para cumplir con el ISP, el sistema implementaría las siguientes interfaces segregadas:
 
 | Interfaz | Propósito | Métodos |
 |---------|-----------|---------|
@@ -93,16 +92,9 @@ Cada interfaz representa un comportamiento real del dominio:
 - `IGestorTurnos` → Solo la secretaria opera sobre la agenda
 - `ITurnoDatos` + `ICicloVidaTurno` → Turno separa datos puros de comportamiento de estado
 
----
-
 ## Estructura de Clases
 
-### Diagrama UML de Interfaces Segregadas
-
-
-![Diagrama UML - ISP](diagramas\01-diagrama-clases\01-solid-04-isp.png)
-
----
+![Diagrama UML - ISP](../../diagramas/01-diagrama-clases/01-solid-04-isp.png)
 
 ## Justificación Técnica
 
@@ -155,7 +147,7 @@ Cada clase implementa **solo las interfaces que necesita**:
 
 ---
 
-## Conclusión
+### Conclusión
 
 El principio ISP se aplica correctamente en el sistema de turnos médicos a través de:
 
