@@ -43,6 +43,13 @@ Este archivo se actualiza con cada Pull Request para registrar avances y correcc
 - [fix/especialista-srp-2] Se agrega archivo especialista-srp.md faltante. PR: [#82](https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/82) - @eternalnight04 (Especialista en Segregación de Interfaces)
 
 
+## [Release Actividad Obligatoria Nº3] - 2026-05-21
+
+### Added
+
+- [feature/esp-actividades-3-4-5-add-diagrama-actividad3] Se agregan diagramas de actividades de casos de uso 3, 4 y 5. PR: [#90](https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/90) - @eternalnight04 (Especialista en Diagramas de Actividades - Casos de Uso 3, 4 y 5)
+
+
 ## [Release Actividad Obligatoria N°2] - 2026-04-20
 
 ### Added
