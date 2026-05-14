@@ -1,0 +1,50 @@
+@startuml AutorizarSobreturno
+
+|Médico|
+start
+:Acceder al sistema;
+:Revisar agenda del día;
+:Solicitar asignar sobreturno;
+
+|Sistema|
+:Mostrar formulario de sobreturno;
+
+|Paciente|
+if (Paciente está registrado?) then (sí)
+  :Seleccionar paciente existente;
+else (no)
+  :Ingresar datos del paciente;
+  :Registrar paciente provisional;
+endif
+
+|Sistema|
+:Validar reglas del consultorio;
+if (Reglas cumplidas?) then (sí)
+  :Verificar cantidad de sobreturnos permitidos;
+  if (Sobreturno permitido?) then (sí)
+    :Solicitar confirmación médica;
+  else (no)
+    :Mostrar límite de sobreturnos;
+    stop
+  endif
+else (no)
+  :Mostrar motivo de rechazo;
+  stop
+endif
+
+|Médico|
+:Confirmar autorización;
+
+|Sistema|
+:Registrar marca de sobreturno en la agenda;
+:Actualizar estado del turno;
+:Registrar quién autorizó el sobreturno;
+
+|Paciente|
+:Notificar asignación del sobreturno;
+
+|Médico|
+:Mostrar confirmación de operación;
+stop
+
+@enduml

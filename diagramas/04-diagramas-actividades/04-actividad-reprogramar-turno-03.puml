@@ -1,0 +1,49 @@
+@startuml ReprogramarTurno
+
+|Secretaria|
+start
+:Acceder al sistema;
+:Buscar turno existente;
+if (Turno encontrado?) then (sí)
+  :Seleccionar turno a reprogramar;
+  :Solicitar nueva fecha y horario;
+else (no)
+  :Mostrar error "Turno no existe";
+  stop
+endif
+
+|Sistema|
+:Validar disponibilidad del nuevo horario;
+if (Horario disponible?) then (sí)
+  :Mostrar propuesta de reprogramación;
+else (no)
+  :Informar conflicto de agenda;
+  stop
+endif
+
+|Secretaria|
+:Confirmar reprogramación;
+
+|Paciente|
+if (Paciente necesita notificación?) then (sí)
+  :Recibir aviso de reprogramación;
+else (no)
+  note right
+    Notificación opcional
+  end note
+endif
+
+|Sistema|
+:Liberar horario original;
+:Asignar nuevo horario al turno;
+:Actualizar datos del turno;
+
+|Agenda|
+:Registrar cambio en el historial;
+:Enviar notificación al paciente;
+
+|Secretaria|
+:Mostrar confirmación de operación;
+stop
+
+@enduml
