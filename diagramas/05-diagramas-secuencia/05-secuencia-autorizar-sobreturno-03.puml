@@ -1,0 +1,53 @@
+@startuml AutorizarSobreturno
+
+
+actor Secretaria
+
+
+boundary "PantallaSobreturno" as pantalla
+control "ServicioSobreturno" as servicio
+entity "Agenda" as agenda
+entity "Sobreturno" as sobreturno
+control "Notificacion" as notificacion
+
+
+Secretaria -> pantalla : solicitarSobreturno(paciente, fecha, hora)
+
+
+pantalla -> servicio : validarSolicitud(paciente, fecha, hora)
+
+
+servicio -> agenda : verificarDisponibilidadSobreturno(fecha, hora)
+
+
+agenda -> sobreturno : consultarCantidadSobreturnos(fecha, hora)
+
+
+sobreturno --> agenda : devolverCantidadSobreturnos()
+
+
+agenda --> servicio : disponibilidadSobreturno()
+
+
+servicio -> sobreturno : crearSobreturno(paciente, fecha, hora)
+
+
+sobreturno --> servicio : sobreturnoCreado()
+
+
+servicio -> notificacion : enviarAvisoMedico(medico, paciente)
+
+
+notificacion --> servicio : avisoEnviado()
+
+
+destroy notificacion
+
+
+servicio --> pantalla : mostrarConfirmacionSobreturno()
+
+
+pantalla --> Secretaria : informarSobreturnoAutorizado()
+
+
+@enduml

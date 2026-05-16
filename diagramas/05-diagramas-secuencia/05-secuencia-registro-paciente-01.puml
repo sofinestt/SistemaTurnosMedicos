@@ -1,0 +1,53 @@
+@startuml RegistroPaciente
+
+
+actor Secretaria
+
+
+boundary "PantallaRegistroPaciente" as pantalla
+control "ServicioPacientes" as servicio
+entity "Paciente" as paciente
+entity "BasePacientes" as baseDatos
+control "Notificacion" as notificacion
+
+
+Secretaria -> pantalla : ingresarDatosPaciente(nombre, dni, obraSocial)
+
+
+pantalla -> servicio : validarDatosPaciente(nombre, dni, obraSocial)
+
+
+servicio -> baseDatos : verificarPacienteExistente(dni)
+
+
+baseDatos --> servicio : pacienteNoRegistrado()
+
+
+servicio -> paciente : crearPaciente(nombre, dni, obraSocial)
+
+
+paciente --> servicio : pacienteCreado()
+
+
+servicio -> baseDatos : guardarPaciente(paciente)
+
+
+baseDatos --> servicio : pacienteGuardado()
+
+
+servicio -> notificacion : enviarConfirmacionRegistro(paciente)
+
+
+notificacion --> servicio : confirmacionEnviada()
+
+
+destroy notificacion
+
+
+servicio --> pantalla : mostrarRegistroExitoso()
+
+
+pantalla --> Secretaria : informarPacienteRegistrado()
+
+
+@enduml
