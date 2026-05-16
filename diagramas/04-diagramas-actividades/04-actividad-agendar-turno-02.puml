@@ -1,0 +1,57 @@
+```plantuml
+@startuml
+title Diagrama de Actividades - Agendar Turno
+
+|Secretaria|
+start
+:Accede al sistema;
+:Autentica credenciales;
+:Selecciona "Agenda";
+
+|Agenda|
+:Consultar disponibilidad del profesional;
+:Mostrar horarios libres;
+
+|Secretaria|
+:Selecciona horario disponible;
+:Define tipo de consulta;
+:Indica duración estimada de la consulta;
+
+|Sistema|
+:Valida disponibilidad del horario;
+if ( hay Horario libre?) then (Sí)
+ 
+    |Secretaria|
+    :Seleccionar paciente que desea ingresar;
+    |Sistema|
+    :datos del paciente;
+    if (¿son datos validos?) then (Sí)
+      :Asociar paciente al turno;
+      :Guardar turno en estado Activo;
+      |Agenda|
+      :Actualizar agenda del profesional;
+    else (No)
+      |Secretaria|
+      :Solicitar corrección de datos;
+      |Sistema|
+      :corrige los datos del paciente;
+    endif
+
+else (No)
+  |Secretaria|
+  :Notificar horario no disponible;
+  :Seleccionar otro horario;
+  |Sistema|
+  :guardar turno en estado activo;
+  :Actualizar agenda del profesional;
+endif
+
+|Sistema|
+:Generar confirmación de turno;
+:Enviar notificación de actualización de agenda;
+
+|Secretaria|
+:finalizar reserva del turno  ;
+stop
+@enduml
+```

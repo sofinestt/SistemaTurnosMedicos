@@ -1,0 +1,44 @@
+@startuml
+
+title Diagrama de Actividades - Cancelar Turno
+
+|Secretaria|
+start
+:Accede al sistema de turnos médicos;
+:Autentica credenciales;
+:selecciona agenda;
+|Agenda|
+:Mostrar agenda de turnos disponibles;
+|Secretaria|
+:Buscar turno específico a cancelar;
+|Sistema|
+:Seleccionar turno de la lista;
+if (¿Turno encontrado?) then (Sí)
+:Seleccionar opción "Cancelar turno";
+else (No)
+:Mostrar mensaje de error: "Turno no encontrado";
+stop
+endif
+:Solicitar motivo de cancelación;
+|Secretaria|
+:Ingresar motivo de cancelación;
+|Sistema|
+:Validar motivo de cancelación;
+if (¿Motivo válido?) then (Sí)
+:Registrar motivo en historial de cambios;
+:Actualizar estado del turno a "cancelado";
+:Liberar horario en la agenda del profesional;
+else (No)
+:Mostrar mensaje de error: "Motivo inválido";
+stop
+endif
+|Sistema|
+:Enviar notificación de cancelación al paciente;
+:Enviar notificación de cancelación al médico;
+|Agenda|
+:Mostrar confirmación de cancelación exitosa;
+:hueco de horario disponible;
+|Secretaria|
+: Finalizar cancelacion del turno;
+stop
+@endum
