@@ -17,7 +17,7 @@ Paciente -> pantalla : solicitarTurno(fecha, hora, tipoConsulta)
 pantalla -> servicio : validarDatosTurno(paciente, fecha, hora, tipoConsulta)
 
 
-servicio -> agenda : verificarDisponibilidad(fecha, hora)
+servicio -> agenda : asignarMedico(fecha, hora)
 
 
 agenda -> turno : buscarConflictos(fecha, hora)
@@ -26,7 +26,7 @@ agenda -> turno : buscarConflictos(fecha, hora)
 turno --> agenda : devolverDisponibilidad()
 
 
-agenda --> servicio : disponibilidadConfirmada()
+agenda --> servicio : medicoAsignado(medico)
 
 
 servicio -> turno : crearTurno(paciente, fecha, hora, tipoConsulta)
