@@ -1,4 +1,4 @@
-﻿@startuml
+﻿@startuml GestionarDisponibilidad
 actor Secretaria
 actor Medico
 
