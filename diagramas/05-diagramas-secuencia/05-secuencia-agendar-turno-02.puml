@@ -14,7 +14,7 @@ control "Notificacion" as notificacion
 Paciente -> pantalla : solicitarTurno(fecha, hora, tipoConsulta)
 
 
-pantalla -> servicio : validarDatosTurno(fecha, hora, tipoConsulta)
+pantalla -> servicio : validarDatosTurno(paciente, fecha, hora, tipoConsulta)
 
 
 servicio -> agenda : verificarDisponibilidad(fecha, hora)
