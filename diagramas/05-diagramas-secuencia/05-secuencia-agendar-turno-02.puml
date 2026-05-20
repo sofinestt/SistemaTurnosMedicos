@@ -1,0 +1,53 @@
+@startuml AgendarTurno
+
+
+actor Paciente
+
+
+boundary "PantallaTurnos" as pantalla
+control "ServicioTurnos" as servicio
+entity "Agenda" as agenda
+entity "Turno" as turno
+control "Notificacion" as notificacion
+
+
+Paciente -> pantalla : solicitarTurno(fecha, hora, tipoConsulta)
+
+
+pantalla -> servicio : validarDatosTurno(paciente, fecha, hora, tipoConsulta)
+
+
+servicio -> agenda : asignarMedico(fecha, hora)
+
+
+agenda -> turno : buscarConflictos(fecha, hora)
+
+
+turno --> agenda : devolverDisponibilidad()
+
+
+agenda --> servicio : medicoAsignado(medico)
+
+
+servicio -> turno : crearTurno(paciente, fecha, hora, tipoConsulta)
+
+
+turno --> servicio : turnoCreado()
+
+
+servicio -> notificacion : enviarConfirmacion(paciente, fecha, hora)
+
+
+notificacion --> servicio : confirmacionEnviada()
+
+
+destroy notificacion
+
+
+servicio --> pantalla : mostrarConfirmacion(turno)
+
+
+pantalla --> Paciente : informarTurnoAgendado()
+
+
+@enduml
