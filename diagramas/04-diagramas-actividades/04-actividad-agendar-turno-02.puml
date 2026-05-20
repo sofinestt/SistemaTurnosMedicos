@@ -1,5 +1,5 @@
 ```plantuml
-@startuml
+@startuml Agendar Turno 
 title Diagrama de Actividades - Agendar Turno
 
 |Secretaria|
