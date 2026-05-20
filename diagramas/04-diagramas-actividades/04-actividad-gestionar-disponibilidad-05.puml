@@ -42,7 +42,7 @@ else
   stop
 endif
 
-|Agenda|
+|Sistema|
 :Actualizar disponibilidad en la agenda;
 :Marcar horarios bloqueados o habilitados;
 

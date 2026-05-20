@@ -9,12 +9,11 @@ start
 |Sistema|
 :Mostrar formulario de sobreturno;
 
-|Paciente|
+|Sistema|
 if (Paciente está registrado?) then (sí)
-  :Seleccionar paciente existente;
+  :Solicitar selección de paciente existente;
 else (no)
-  :Ingresar datos del paciente;
-  :Registrar paciente provisional;
+  :Solicitar datos de nuevo paciente;
 endif
 
 |Sistema|
