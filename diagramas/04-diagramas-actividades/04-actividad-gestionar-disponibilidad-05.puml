@@ -1,0 +1,57 @@
+@startuml GestionarDisponibilidad
+
+|Secretaria|
+start
+:Acceder al sistema;
+:Seleccionar gestión de disponibilidad;
+
+|Sistema|
+:Mostrar opciones de disponibilidad;
+if (Acción = Bloquear horario?) then (sí)
+  :Solicitar motivo y fechas de bloqueo;
+  :Validar conflictividad con turnos existentes;
+  if (Conflicto?) then (sí)
+    :Informar conflicto de bloqueo;
+    stop
+  else (no)
+    :Guardar bloqueo por vacaciones/feriado;
+  endif
+elseif (Acción = Configurar horario habitual?) then (sí)
+  :Ingresar horario habitual;
+  :Validar reglas de días y franjas;
+  if (Horario válido?) then (sí)
+    :Registrar horario habitual;
+  else (no)
+    :Mostrar error de configuración;
+    stop
+  endif
+elseif (Acción = Asignar sobreturno?) then (sí)
+  |Médico|
+  :Solicitar asignación de sobreturno;
+  |Sistema|
+  :Verificar reglas del consultorio;
+  if (Reglas cumplidas?) then (sí)
+    :Confirmar autorización de sobreturno;
+    :Registrar sobreturno en agenda;
+  else (no)
+    :Rechazar sobreturno;
+    stop
+  endif
+else
+  :Mostrar mensaje "Acción inválida";
+  stop
+endif
+
+|Sistema|
+:Actualizar disponibilidad en la agenda;
+:Marcar horarios bloqueados o habilitados;
+
+|Sistema|
+:Registrar cambios en el historial de disponibilidad;
+:Notificar a los actores relevantes;
+
+|Secretaria|
+:Mostrar confirmación de gestión;
+stop
+
+@enduml

@@ -1,0 +1,53 @@
+@startuml ReprogramarTurno
+
+
+actor Paciente
+
+
+boundary "PantallaReprogramacion" as pantalla
+control "ServicioReprogramacion" as servicio
+entity "Turno" as turno
+entity "Agenda" as agenda
+control "Notificacion" as notificacion
+
+
+Paciente -> pantalla : solicitarReprogramacion(idTurno, nuevaFecha, nuevaHora)
+
+
+pantalla -> servicio : validarReprogramacion(idTurno, nuevaFecha, nuevaHora)
+
+
+servicio -> turno : buscarTurno(idTurno)
+
+
+turno --> servicio : devolverDatosTurno()
+
+
+servicio -> agenda : verificarDisponibilidad(nuevaFecha, nuevaHora)
+
+
+agenda --> servicio : disponibilidadConfirmada()
+
+
+servicio -> turno : actualizarTurno(nuevaFecha, nuevaHora)
+
+
+turno --> servicio : turnoActualizado()
+
+
+servicio -> notificacion : enviarNuevaConfirmacion(paciente, nuevaFecha, nuevaHora)
+
+
+notificacion --> servicio : confirmacionEnviada()
+
+
+destroy notificacion
+
+
+servicio --> pantalla : mostrarReprogramacionExitosa()
+
+
+pantalla --> Paciente : informarTurnoReprogramado()
+
+
+@enduml
