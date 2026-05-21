@@ -17,12 +17,12 @@ El proyecto utiliza metodologías ágiles de diseño como **Tarjetas CRC** (Clas
 
 ## Integrantes
 
-| Nombre y Apellido | Matrícula | Usuario de GitHub | Rol pp|
+| Nombre y Apellido | Matrícula | Usuario de GitHub | Rol|
 |:-----| -----: | ------: | :----: | 
-| Milenka Athina Vila | 157550 | @eternalnight04 |Especialista de Segregación de Interfaces(ISP) |
-| Lautaro Chávez |151222 | @Lautarochavez14 |Especialista en Principios de Extensión (ocp+ lsp) |
-| Alexis Matias Britez Acosta  | 158100| @britezacostaalexis-pixel |Documentador y Coordinador de Repositorio(SRP) |
-| Milenka Athina Vila | 157550    |   @eternalnight04  |   Especialista en Inversión de Dependencias(DIP)   |
+|  Alexis Matias Britez Acosta  | 158100| @britezacostaalexis-pixel |Especialista en Diagramas de Actividades - Casos de Uso 1 y 2 |
+| Milenka Athina Vila | 157550  |   @eternalnight04  |Especialista en Diagramas de Actividades - Casos de Uso 3, 4 y 5 |
+| Lautaro Chávez |151222 | @Lautarochavez14 |Especialista en Diagramas de Secuencia |
+| Alexis Matias Britez Acosta  | 158100| @britezacostaalexis-pixel |  Documentador y Coordinador de Repositorio   |
 
 ---
 
@@ -31,3 +31,5 @@ El proyecto utiliza metodologías ágiles de diseño como **Tarjetas CRC** (Clas
 * [Anexos](./anexos/anexos.md)
 * [Diagramas UML](./diagramas/diagramasUML.md)
 * [Herramientas Agile](./herramientas-agile/herramientas_agile.md)
+- [Diagramas de Actividades](./diagramas/04-diagramas-actividades/diagramas_de_actividades.md)
+- [Diagramas de Secuencia](./diagramas/05-diagramas-secuencia/diagramas_de_secuencias.md)  
