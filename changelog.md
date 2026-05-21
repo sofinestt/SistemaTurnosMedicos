@@ -65,7 +65,7 @@ Este archivo se actualiza con cada Pull Request para registrar avances y correcc
 
 ### Fixed
 
-
+- [feature/correcciones-secuencias] Se corrigieron nombres y enlaces. PR: [#96](https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/96) - @eternalnight04 (Especialista en Diagramas de Actividades - Casos de Uso 3, 4 y 5)
 
 ## [Release Actividad Obligatoria N°2] - 2026-04-20
 
