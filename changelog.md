@@ -50,9 +50,9 @@ Este archivo se actualiza con cada Pull Request para registrar avances y correcc
 
 - [fix/especialista-srp-2] Se agrega archivo especialista-srp.md faltante. PR: [#82](https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/82) - @eternalnight04 (Especialista en Segregación de Interfaces)
 
-## [release actividad obligatoria n°3] - 2026-05-21
+## [Release Actividad Obligatoria N°3] - 2026-05-21
 
-### added
+### Added
 
 - [feature/esp-actividades-1-2-add-diagrama-actividad3] se agregan diagramas de actividades de casos de uso 1 y 2. PR:[#92](https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/92) - @britezacostaalexis-pixel (Especialista de Diagramas de Actividades - Casos de Uso 1 y 2)
 
@@ -61,8 +61,11 @@ Este archivo se actualiza con cada Pull Request para registrar avances y correcc
 
 - [feature/esp-secuencia-add-diagrama-secuencia-1] Se agregan 5 diagramas de secuencia y el índice correspondiente de la carpeta 05. PR: [#93](https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/93) - @lautarochavez14 (Especialista en Diagramas de Secuencia)
 
+- [feature/doc-coord-repo-update-readme-md] Actualización de README.md, consolidación de índices UML, gestión del changelog y documentación de auditoría técnica con IA.  PR: [#95](https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/95) - @britezacostaalexis-pixel (Documentador y Coordinador de Repositorio)
 
-- [feature/doc-coord-repo-update-readme-md] Actualización de README.md, consolidación de índices UML, gestión del changelog y documentación de auditoría técnica con IA.  PR: [#95] (https://github.com/britezacostaalexis-pixel/SistemaTurnosMedicos/pull/95) - @britezacostaalexis-pixel (Documentador y Coordinador de Repositorio)
+### Fixed
+
+
 
 ## [Release Actividad Obligatoria N°2] - 2026-04-20
 
